@@ -9,7 +9,6 @@
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
-  margin-top: 10px;
 }
 
 .navigation a {
@@ -35,6 +34,7 @@
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5px;
 }
 
 .info li {
