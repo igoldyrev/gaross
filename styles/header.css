@@ -1,113 +1,39 @@
-.navigation {
-  list-style: none;
-  margin: 0;
-  background: deepskyblue;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
-}
-
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: white;
-}
-
-.navigation a:hover {
-  background: #00b7f5;
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .info {
-  list-style: none;
-  margin: 0;
-  background: gray;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 5px;
+	height: 40px;
+	width: 100%;
+	font-size: large;
+	position: relative;
+}
+
+.info ul {
+	padding: 0;
+	margin: 0 auto;
+	height: 40px;
+	width: 100%;
 }
 
 .info li {
-  text-decoration: none;
-  display: block;
-  padding: 1px;
-  color: white;
-  width: 170px;
+	display: inline-block;
+	float: right;
+	height: 40px;
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	border-left: 1px solid #000feb;
+}
+
+.info li:first-child {
+	border-right: 1px solid #000feb;
 }
 
 .info a {
   text-decoration: none;
-  display: block;
   padding: 1px;
-  color: white;
-  width: 170px;
-}
-
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-between;
-  }
-  
-  .info ul {
-    width: 100%;
-  }
-  
-  .info li {
-    width: 50%;
-    float: left;
-    position: relative;
-    display: inline;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-}
-@media all and (max-width: 600px) {
-  .navigation   {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  }
-
-  .navigation a {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
-  
-  .info {
-     -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  }
-  
-  .info li {
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    width: 100%;
-    text-align: center;
-  }
-  .info a  {
-    text-align: center;
-    width: 100%;
-  }
-  
-  .info li:last-of-type li {
-    border-bottom: none;
-  }
+  color: #000;
 }
