@@ -33,7 +33,7 @@ header {
 }
 
 .info a {
-  text-decoration: none;
+  text-decoration: underline;
   padding: 1px;
   color: #000;
 }
