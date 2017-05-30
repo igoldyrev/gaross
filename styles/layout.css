@@ -20,17 +20,9 @@ body {
 
 .main {
   grid-area: main;
-  background: green;
   height: auto;
 }
 
 .footer {
   grid-area: footer;
-  background: blue;
-}
-
-@media all and (max-width: 800px) {
-	.container{
-		grid-template-rows: 150px auto 10%;
-	}
 }
