@@ -1,22 +1,21 @@
 /* Стили для макета сайта */
 body {
 	padding: 0;
-	margin: 0;
+	margin: 10px auto 0 auto;
+	width: 60%;
 }
 
 .container {
   display: grid;
   grid-template-rows: 10% auto 10%;
   grid-template-columns: auto;
-  grid-row-gap: 10px;
+  grid-row-gap: 0px;
   height: 100%;
   grid-template-areas: "header" "main" "footer";
-  background: orange;
 }
 
 .header {
   grid-area: header;
-  background: gray;
 }
 
 .main {
@@ -28,4 +27,10 @@ body {
 .footer {
   grid-area: footer;
   background: blue;
+}
+
+@media all and (max-width: 800px) {
+	.container{
+		grid-template-rows: 150px auto 10%;
+	}
 }
