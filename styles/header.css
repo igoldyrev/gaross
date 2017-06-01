@@ -37,3 +37,33 @@ header {
   padding: 1px;
   color: #000;
 }
+
+@media (max-width: 480px) {
+	header{
+		margin-top: 5px;
+		flex-direction: column;
+		align-items: flex-center;
+		justify-content: space-between;
+	}
+	header img {
+		width: 70%;
+		height: auto;
+	}
+	.info {
+		margin-top: 5px;
+	}
+	.info ul {
+	width: 100%;
+	}
+	.info li {
+	display: block;
+	float: left;
+	width: 50%;
+	text-align: left;
+	text-decoration: none;
+	border-left: none;
+	}
+	.info li:first-child {
+	border-right: none;
+}
+}
