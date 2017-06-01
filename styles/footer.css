@@ -37,3 +37,27 @@ footer a {
 	text-decoration: underline;
 	line-height: 40px;
 }
+@media (max-width: 768px) {
+footer {
+	margin-bottom: 10px;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-size: medium;
+	height: auto;
+	}
+footer ul {
+	height: auto;
+}
+footer li {
+	width: auto;
+	display: block;
+	line-height: 20px;
+	}
+footer a {
+	color: #000;
+	display: block;
+	text-align: left;
+	text-decoration: underline;
+	line-height: 20px;
+}
+}
