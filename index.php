@@ -1,5 +1,6 @@
 <?php include ($_SERVER["DOCUMENT_ROOT"]."/frames/headtags.html");?>
 <title>ООО Гаросс</title>
+<meta name="description" content="Официальная страница компании ООО Гаросс, Пермь">
 </head><body>
 <div class="container">
   <div class="header">
