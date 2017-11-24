@@ -1,4 +1,4 @@
-<?php include ($_SERVER["DOCUMENT_ROOT"]."/frames/headtags.html");?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/modules/headtags.html");?>
 <title>ООО Гаросс</title>
 <meta name="description" content="Официальная страница компании ООО Гаросс, Пермь">
 </head><body>
@@ -57,4 +57,4 @@
     <?php include ($_SERVER["DOCUMENT_ROOT"]."/frames/footer.html");?>
   </div>
 </div>
-<?php include ($_SERVER["DOCUMENT_ROOT"]."/frames/counters.html");?>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/modules/counters.html");?>
