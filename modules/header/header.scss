@@ -1,5 +1,23 @@
 header {
   display: flex;
   justify-content: space-between;
-
+  font: {
+    family: $font;
+    size: 1em;
+    weight: 400;
+  }
+  &__logo {
+    width: 200px;
+  }
+  &__list {
+    font: {
+      family: $font;
+      size: 1em;
+      weight: 400;
+    }
+    list-style-type: none;
+    >li {
+      display: inline-block;
+    }
+  }
 }
