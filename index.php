@@ -4,7 +4,7 @@
 </head><body>
 <div class="container">
   <div class="header">
-	<?php include ($_SERVER["DOCUMENT_ROOT"]."/frames/header.html");?>
+	<?php include ($_SERVER["DOCUMENT_ROOT"]."/modules/header/header.php");?>
   </div>
   
   <div class="main">
