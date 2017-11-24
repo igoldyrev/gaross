@@ -159,6 +159,10 @@
   src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.woff2") format("woff2"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.woff") format("woff"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.ttf") format("truetype"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.svg#RobotoSlab") format("svg");
   /* Legacy iOS */ }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 /* Текстовые блоки */
 .page {
   /* Зачеркнутый текст */ }
@@ -229,18 +233,32 @@ img {
   cursor: pointer;
   padding: 10px; }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: Roboto, sans-serif;
   font-size: 1em;
-  font-weight: 400; }
-  header__logo {
-    width: 200px; }
-  header__list {
+  font-weight: 400;
+  width: 100%;
+  height: 100px; }
+  .header__list {
     font-family: Roboto, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
     list-style-type: none; }
-    header__list > li {
-      display: inline-block; }
+    .header__list > li {
+      display: inline-block;
+      padding: 5px 10px;
+      border-left: 1px solid #0111ea; }
+      .header__list > li:last-child {
+        border-right: 1px solid #0111ea; }
+  .header__link {
+    font-family: Roboto, sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none; }
+    .header__link:hover {
+      color: #0111ea;
+      transition: 0.5s ease-in-out; }
