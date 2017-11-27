@@ -55,6 +55,6 @@
   
   <div class="footer">
     <?php include ($_SERVER["DOCUMENT_ROOT"]."/frames/footer.html");?>
-  </div>
+  </div>-->
 </div>
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/modules/counters.html");?>
