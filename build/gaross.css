@@ -159,6 +159,11 @@
   src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.woff2") format("woff2"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.woff") format("woff"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.ttf") format("truetype"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.svg#RobotoSlab") format("svg");
   /* Legacy iOS */ }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1220px; }
+
 * {
   margin: 0;
   padding: 0; }
