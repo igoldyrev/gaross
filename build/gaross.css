@@ -268,3 +268,26 @@ img {
     .header__link:hover {
       color: #0111ea;
       transition: 0.5s ease-in-out; }
+
+.footer {
+  background: #4c9bff;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  color: #000; }
+  .footer__ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    list-style-type: none; }
+    .footer__ul > li {
+      font-family: Roboto, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: #000; }
+      .footer__ul > li > a {
+        text-decoration: none;
+        color: #000000; }
+        .footer__ul > li > a:hover {
+          text-decoration: underline; }
