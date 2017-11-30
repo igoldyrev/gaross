@@ -1,8 +1,6 @@
 User-Agent: *
 Allow: /
-Disallow: /frames/counters.html
-Disallow: /frames/footer.html
-Disallow: /frames/header.html
-Disallow: /frames/headtags.php
+Disallow: /modules
+Disallow: /js
 Sitemap: https://gaross59.ru/sitemap.xml
 Host: https://gaross59.ru/
