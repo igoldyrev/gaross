@@ -159,11 +159,40 @@
   src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.woff2") format("woff2"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.woff") format("woff"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.ttf") format("truetype"), url("/fonts/roboto-slab-v7-cyrillic/roboto-slab-v7-cyrillic-700.svg#RobotoSlab") format("svg");
   /* Legacy iOS */ }
 
+body {
+  background-color: #F2F2F2; }
+
 .container {
   display: flex;
   flex-direction: column;
   width: 1220px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fff; }
+
+.main {
+  padding: 25px; }
+  .main__working, .main__tasking, .main__contacts, .main__button {
+    margin-top: 20px; }
+  .main__button {
+    text-align: center; }
+
+.button__mail {
+  width: 250px;
+  height: 40px;
+  background-color: #0111ea;
+  border: none;
+  border-radius: 5px;
+  padding: 0; }
+  .button__mail > a {
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 40px;
+    width: 100%;
+    height: 100%; }
 
 * {
   margin: 0;
@@ -199,15 +228,27 @@
     clear: both; }
   .page__text {
     font-family: Roboto, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
     line-height: 20px; }
+    .page__text--center {
+      text-align: center;
+      padding: 10px 0px; }
   .page__list {
     font-family: Roboto, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
     line-height: 20px;
-    margin-left: 30px; }
+    margin-left: 30px;
+    list-style-type: none; }
+    .page__list > li::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: #4d9aff;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 10px; }
   .page__link {
     font-family: Roboto, sans-serif;
     font-size: 1.1em;
@@ -243,6 +284,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
   font-family: Roboto, sans-serif;
   font-size: 1em;
   font-weight: 400;

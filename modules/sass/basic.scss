@@ -44,19 +44,35 @@
   &__text {
     font: {
       family: $font;
-      size: 1em;
+      size: 1.1em;
       weight: 400;
     }
     line-height: 20px;
+    &--center {
+      text-align: center;
+      padding: 10px 0px;
+    }
   }
   &__list {
     font: {
       family: $font;
-      size: 1em;
+      size: 1.1em;
       weight: 400;
     }
     line-height: 20px;
     margin-left: 30px;
+    list-style-type: none;
+    >li {
+      &::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: $subcolor ;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
   }
   &__link {
     font: {
