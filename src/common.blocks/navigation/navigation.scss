@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+
+  position: sticky;
+  top: 5px;
+  z-index: 3;
+
+  width: 1220px;
+  height: 40px;
+
+  background: $primarycolor;
+  margin: 0 auto 15px auto;
+
+}
