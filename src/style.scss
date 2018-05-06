@@ -110,38 +110,37 @@
 @import "common.blocks/button/__zakaz/_help/button__zakaz_help";
 @import "common.blocks/button/__zakaz/_call/button__zakaz_call";
 @import "mobile.blocks/button/__zakaz/_call/button__zakaz_call";
-
-////Шапка сайта
-//@import "common.blocks/header/header";
-//@import "common.blocks/header/__wrap/header__wrap";
-//@import "tablet.blocks/header/__wrap/header__wrap";
-//@import "mobile.blocks/header/__wrap/header__wrap";
-//@import "common.blocks/header/__logo/header__logo";
-//@import "mobile.blocks/header/__logo/header__logo";
-//@import "common.blocks/header/__img/header__img";
-//@import "mobile.blocks/header/__img/header__img";
-//@import "common.blocks/header/__info/header__info";
-//@import "common.blocks/header/__list/header__list";
-//@import "tablet.blocks/header/__list/header__list";
-//@import "common.blocks/header/__link/header__link";
-//@import "tablet.blocks/header/__link/header__link";
-//@import "tablet.blocks/header/__link/_big/header__link_big";
-//@import "common.blocks/header/__link/_big/header__link_big";
+//Шапка сайта
+@import "common.blocks/header/header";
+@import "common.blocks/header/__wrap/header__wrap";
+@import "tablet.blocks/header/__wrap/header__wrap";
+@import "mobile.blocks/header/__wrap/header__wrap";
+@import "common.blocks/header/__logo/header__logo";
+@import "mobile.blocks/header/__logo/header__logo";
+@import "common.blocks/header/__img/header__img";
+@import "mobile.blocks/header/__img/header__img";
+@import "common.blocks/header/__info/header__info";
+@import "common.blocks/header/__list/header__list";
+@import "tablet.blocks/header/__list/header__list";
+@import "common.blocks/header/__link/header__link";
+@import "tablet.blocks/header/__link/header__link";
+@import "tablet.blocks/header/__link/_big/header__link_big";
+@import "common.blocks/header/__link/_big/header__link_big";
 //
 //
-////Навигация на сайте
-//@import "common.blocks/navigation/navigation";
-//@import "tablet.blocks/navigation/navigation";
-//@import "mobile.blocks/navigation/navigation";
-//@import "common.blocks/navigation/__list/navigation__list";
-//@import "tablet.blocks/navigation/__list/navigation__list";
-//@import "mobile.blocks/navigation/__list/navigation__list";
-//@import "common.blocks/navigation/__list-item/navigation__list-item";
-//@import "tablet.blocks/navigation/__list-item/navigation__list-item";
-//@import "mobile.blocks/navigation/__list-item/navigation__list-item";
-//@import "common.blocks/navigation/__link/navigation__link";
-//@import "tablet.blocks/navigation/__link/navigation__link";
-//@import "mobile.blocks/navigation/__link/navigation__link";
+//Навигация на сайте
+@import "common.blocks/navigation/navigation";
+@import "tablet.blocks/navigation/navigation";
+@import "mobile.blocks/navigation/navigation";
+@import "common.blocks/navigation/__list/navigation__list";
+@import "tablet.blocks/navigation/__list/navigation__list";
+@import "mobile.blocks/navigation/__list/navigation__list";
+@import "common.blocks/navigation/__list-item/navigation__list-item";
+@import "tablet.blocks/navigation/__list-item/navigation__list-item";
+@import "mobile.blocks/navigation/__list-item/navigation__list-item";
+@import "common.blocks/navigation/__link/navigation__link";
+@import "tablet.blocks/navigation/__link/navigation__link";
+@import "mobile.blocks/navigation/__link/navigation__link";
 //
 ////Навигация на мобильных устройствах
 //@import "common.blocks/navigation-mobile/navigation-mobile";
@@ -149,23 +148,22 @@
 //@import "mobile.blocks/navigation-mobile/__link-wrap/navigation-mobile__link-wrap";
 //@import "mobile.blocks/navigation-mobile/__link/navigation-mobile__link";
 //
-////Навигация слева
-//@import "common.blocks/left-nav/left-nav";
-//@import "tablet.blocks/left-nav/left-nav";
-//@import "mobile.blocks/left-nav/left-nav";
-//@import "common.blocks/left-nav/__link/left-nav__link";
-//@import "tablet.blocks/left-nav/__link/left-nav__link";
-//@import "mobile.blocks/left-nav/__link/left-nav__link";
-//
-////Подвал сайта
-//@import "common.blocks/footer/footer";
-//@import "tablet.blocks/footer/footer";
-//@import "mobile.blocks/footer/footer";
-//@import "common.blocks/footer/__list/footer__list";
-//@import "common.blocks/footer/__list-item/footer__list-item";
-//@import "common.blocks/footer/__link/footer__link";
-//@import "tablet.blocks/footer/__link/footer__link";
-//@import "mobile.blocks/footer/__link/footer__link";
+//Навигация слева
+@import "common.blocks/left-nav/left-nav";
+@import "tablet.blocks/left-nav/left-nav";
+@import "mobile.blocks/left-nav/left-nav";
+@import "common.blocks/left-nav/__link/left-nav__link";
+@import "tablet.blocks/left-nav/__link/left-nav__link";
+@import "mobile.blocks/left-nav/__link/left-nav__link";
+//Подвал сайта
+@import "common.blocks/footer/footer";
+@import "tablet.blocks/footer/footer";
+@import "mobile.blocks/footer/footer";
+@import "common.blocks/footer/__list/footer__list";
+@import "common.blocks/footer/__list-item/footer__list-item";
+@import "common.blocks/footer/__link/footer__link";
+@import "tablet.blocks/footer/__link/footer__link";
+@import "mobile.blocks/footer/__link/footer__link";
 
 
 
