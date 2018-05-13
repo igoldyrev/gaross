@@ -6,4 +6,12 @@
   color: inherit;
   text-decoration: underline;
   cursor: pointer;
+
+  &--color-hover {
+
+    &:hover {
+      color: $subcolor;
+      transition: 0.5s ease-in-out;
+    }
+  }
 }

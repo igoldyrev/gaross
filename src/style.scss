@@ -10,44 +10,21 @@
 
 //Заголовки
 @import "library.blocks/title/title";
-@import "tablet.blocks/title/title";
-@import "mobile.blocks/title/title";
 @import "library.blocks/title-h1/title-h1";
-@import "tablet.blocks/title-h1/title-h1";
-@import "mobile.blocks/title-h1/title-h1";
 @import "library.blocks/title-h2/title-h2";
-@import "tablet.blocks/title-h2/title-h2";
-@import "mobile.blocks/title-h2/title-h2";
 @import "library.blocks/title-h3/title-h3";
-@import "tablet.blocks/title-h3/title-h3";
-@import "mobile.blocks/title-h3/title-h3";
 @import "library.blocks/title-h4/title-h4";
-@import "tablet.blocks/title-h4/title-h4";
-@import "mobile.blocks/title-h4/title-h4";
 @import "library.blocks/title-h5/title-h5";
-@import "tablet.blocks/title-h5/title-h5";
-@import "mobile.blocks/title-h5/title-h5";
 @import "library.blocks/title-h6/title-h6";
-@import "tablet.blocks/title-h6/title-h6";
-@import "mobile.blocks/title-h6/title-h6";
 
 //Текст, списки и ссылки
 @import "library.blocks/text/text";
-@import "tablet.blocks/text/text";
-@import "mobile.blocks/text/text";
 @import "library.blocks/span/span";
-@import "tablet.blocks/span/span";
-@import "mobile.blocks/span/span";
 @import "library.blocks/list/list";
-@import "mobile.blocks/list/list";
 @import "common.blocks/list/__unsorted/list__unsorted";
-@import "library.blocks/list/_decimal/list_decimal";
 @import "common.blocks/list/_decimal/list_decimal";
 @import "library.blocks/link/link";
 @import "common.blocks/link/link";
-@import "library.blocks/link/_green/link_green";
-@import "common.blocks/link-green/link-green";
-@import "mobile.blocks/link-green/link-green";
 
 //Изображения
 @import "library.blocks/img/__wrap/img__wrap";
