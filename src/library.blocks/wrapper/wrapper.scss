@@ -3,7 +3,7 @@
   margin: 15px auto 30px auto;
 
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
 }
 
 @include adaptive(pad) {
