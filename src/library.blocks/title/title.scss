@@ -5,3 +5,15 @@
   text-align: center;
   margin-bottom: 15px;
 }
+
+@include adaptive(pad) {
+  .title {
+    margin-bottom: 10px;
+  }
+}
+
+@include adaptive(mobile) {
+  .title {
+    margin-bottom: 10px;
+  }
+}

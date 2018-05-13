@@ -3,3 +3,15 @@
   line-height: 20px;
   color: inherit;
 }
+
+@include adaptive(pad) {
+  .title-h5 {
+    line-height: 18px;
+  }
+}
+
+@include adaptive(mobile) {
+  .title-h5 {
+    line-height: 18px;
+  }
+}

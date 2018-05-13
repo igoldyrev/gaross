@@ -3,3 +3,17 @@
   line-height: 32px;
   color: inherit;
 }
+
+@include adaptive(pad) {
+  .title-h2 {
+    font-size: 1.2em;
+    line-height: 26px;
+  }
+}
+
+@include adaptive(mobile) {
+  .title-h2 {
+    font-size: 1em;
+    line-height: 20px;
+  }
+}
