@@ -8,6 +8,7 @@ module.exports = {
     entry: [
         './src/main.js',
         './src/library.blocks/img/img.js',
+      './src/common.blocks/navigation/navigation.js',
         './src/style.scss'
     ],
     output: {

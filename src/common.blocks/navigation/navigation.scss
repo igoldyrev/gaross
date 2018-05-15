@@ -36,6 +36,7 @@
     &:hover {
       border: 1px solid $primarycolor;
       border-radius: 7px;
+      cursor: pointer;
     }
 
     &--active {
