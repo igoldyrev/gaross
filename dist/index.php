@@ -15,7 +15,8 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
       <li>комплексному промышленному и гражданскому строительству;</li>
       <li>проектированию;</li>
       <li>поставке, монтажу и пуско-наладке всего необходимого оборудования для систем водоснабжения и канализации,
-        вентиляции, бесперебойного электропитания, сигнализации и связи;</li>
+        вентиляции, бесперебойного электропитания, сигнализации и связи;
+      </li>
       <li>гарантийному и постгарантийному техническому обслуживанию.</li>
     </ul>
   </div>
@@ -26,7 +27,21 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
     Заказчики
   </div>
   <div class="tab tab__letters">
-    Письма
+    <h1 class="title title-h1">Благодарственные письма</h1>
+    <div class="letter__wrap">
+      <div class="letter">
+        <h3 class="title title-h3 letter__title">ФКГУ Комбинат "Алый Стяг"</h3>
+        <img class="img letter__img" src="/img/letters/alyi-styag-osveshenie.jpg" alt="">
+      </div>
+      <div class="letter">
+        <h3 class="title title-h3 letter__title">ФКГУ Комбинат "Алый Стяг"</h3>
+        <img class="img letter__img" src="/img/letters/alyi-styag-psd.jpg" alt="">
+      </div>
+      <div class="letter">
+        <h3 class="title title-h3 letter__title">ООО ЦБК Кама"</h3>
+        <img class="img letter__img" src="/img/letters/cbk-kama.jpg" alt="">
+      </div>
+    </div>
   </div>
   <div class="tab tab__contacts">
     Контакты
