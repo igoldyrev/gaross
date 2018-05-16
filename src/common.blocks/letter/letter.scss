@@ -1,0 +1,25 @@
+.letter {
+  width: 300px;
+  padding: 10px;
+
+  border: 1px solid $mediumgray;
+  border-radius: 5px;
+
+  box-sizing: border-box;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    height: 75px;
+  }
+
+  &__img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+}
