@@ -1,9 +1,6 @@
 .wrapper {
   width: 1220px;
   margin: 15px auto 30px auto;
-
-  display: flex;
-  flex-direction: column;
 }
 
 @include adaptive(pad) {
