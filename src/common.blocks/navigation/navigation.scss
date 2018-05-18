@@ -33,6 +33,10 @@
     border: 1px solid #ffffff;
     box-sizing: border-box;
 
+    > a {
+      text-decoration: none;
+    }
+
     &:hover {
       border: 1px solid $primarycolor;
       border-radius: 7px;
