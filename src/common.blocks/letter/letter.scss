@@ -1,25 +1,20 @@
 .letter {
-  width: 300px;
   padding: 10px;
-
+  margin: 0 0 15px 0;
   border: 1px solid $mediumgray;
   border-radius: 5px;
-
   box-sizing: border-box;
 
-  &__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__title {
-    height: 75px;
-  }
-
   &__img {
-    width: 250px;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+
+    font-size: 1em;
+    font-weight: 400;
+    color: #666;
+    text-decoration: none;
+
+    &:hover {
+      color: $primarycolor;
+    }
   }
 }
