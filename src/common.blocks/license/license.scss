@@ -1,0 +1,28 @@
+.license {
+  padding: 10px;
+  margin: 0 0 15px 0;
+  border: 1px solid $mediumgray;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  &__link {
+    color: $primarycolor;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
