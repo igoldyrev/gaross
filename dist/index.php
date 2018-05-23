@@ -18,6 +18,15 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
     </li>
     <li>гарантийному и постгарантийному техническому обслуживанию.</li>
   </ul>
+  <p class="text">Для решения данных задач ООО «ГАРОСС» имеет все необходимые лицензии, <a
+      class="link link--color-hover"
+      href="licenses.php/#sro-stroiteli-urala">свидетельство СРО «Строители Урала» № С – 171-59-0961-59-220317 от
+      22.03.2017 г.</a>, <a class="link link--color-hover" href="licenses.php/#sro-project-work">свидетельство СРО
+      «Проектные организации Урала» № П –
+      112-59-0170-59-290317 от 29.03.2017 г.</a>, <a class="link link--color-hover" href="licenses.php/#mchs">лицензия
+      МЧС № 59-Б/00513 от 13.07.2017
+      г.</a>, сертификат соответствия ISO, а также располагает высококвалифицированным коллективом проектировщиков,
+    менеджеров, инженеров, монтажников, прошедшим обучение и сертификацию.</p>
 </div>
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/blocks/footer.html");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/counters.html"); ?>
