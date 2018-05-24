@@ -14,8 +14,18 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
       насосной камерой</a>
   </div>
   <div class="letter">
-    <h4 class="title title-h4">ООО ЦБК Кама"</h4>
-    <a class="letter__img" href="/img/letters/cbk-kama.jpg">Благодарственное письмо за выполненные
-      строительно-ремонтные работы на территории ООО "ЦБК КАМА"</a>
+    <h4 class="title title-h4">НТЦ Информационная безопасность</h4>
+    <a class="letter__img" href="/img/letters/ntc-inf-bezopasnost-smr.jpg">Благодарственное письмо за организацию и
+      выполнение строительно-монтажных работ по капитальному ремонту освещения</a>
+    <a class="letter__img" href="/img/letters/ntc-inf-bezopasnost-pir.jpg">Благодарственное письмо за разработку
+      проектно-сметной документации по договору подряда №59 от 21 августа 2017г</a>
   </div>
+  <a class="letter__img" href="/img/letters/cbk-kama.jpg">Благодарственное письмо за выполненные
+    строительно-ремонтные работы на территории ООО "ЦБК КАМА"</a>
+  <a class="letter__img" href="/img/letters/ip-panfilov.jpg">Благодарственное письмо за выполненные работы по монтажу
+    системы видеонаблюдения на объекте ТЦ Апельсин</a>
+  <a class="letter__img" href="/img/letters/kontur.jpg">Благодарственное письмо за монтаж систем электроснабжения,
+    охранно-пожарной сигнализации, видеонаблюдения, связи</a>
+  <a class="letter__img" href="/img/letters/lpp-almed.jpg">Благодарственное письмо от санаторий-профилакторий Алмед</a>
+  <a class="letter__img" href="/img/letters/metafraks.jpg">Благодарственное письмо от ОАО Метафракс</a>
 </div>
