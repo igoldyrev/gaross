@@ -72,7 +72,11 @@ module.exports = {
             {
                 from: './src/html',
                 to: './blocks'
-            }
+            },
+          {
+            from: './src/fa',
+            to: './fa'
+          }
         ]),
     ],
   devServer: {
