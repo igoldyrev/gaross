@@ -21,5 +21,5 @@ $titleconst = "ООО Гаросс - строительные работы - ";
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="../build/gaross.css">
 <link rel="stylesheet" href="../fa/css/font-awesome.min.css">
+<link rel="stylesheet" href="../build/gaross.css">
