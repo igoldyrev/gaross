@@ -6,7 +6,9 @@
   box-sizing: border-box;
 
   &__img {
-    display: inline-block;
+    display: block;
+    float: left;
+    clear: both;
 
     font-size: 1em;
     font-weight: 400;
@@ -16,5 +18,15 @@
     &:hover {
       color: $primarycolor;
     }
+  }
+
+  &__icon {
+    font-size: 1.3em;
+    margin-right: 10px;
+  }
+
+  &__list {
+    padding: 10px;
+    margin-bottom: 15px;
   }
 }
