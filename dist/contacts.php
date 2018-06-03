@@ -14,7 +14,8 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
       info@gaross59.ru</a>
   </div>
   <h2 class="title title-h2">Наше местоположение</h2>
-  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afdac42df5209134c889acf92bd590f2a3abff6b62f9a27c25964c1482b995b23&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+  <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afdac42df5209134c889acf92bd590f2a3abff6b62f9a27c25964c1482b995b23&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
   <h2 class="title title-h2">Реквизиты:</h2>
   <p class="text">ИНН 5903099470 КПП 590301001</p>
   <p class="text">р/с: 40702810949490059143 в Волго-Вятском банке ПАО Сбербанк г. Нижний Новгород; кор.счет:
@@ -24,3 +25,5 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
   <p class="text">ОКВЭД (основной вид деятельности) – 41.20</p>
   <p class="text">Генеральный директор – Голдырев Андрей Николаевич, действующий на основании Устава</p>
 </div>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/blocks/footer.html");
+include($_SERVER["DOCUMENT_ROOT"] . "/blocks/counters.html"); ?>

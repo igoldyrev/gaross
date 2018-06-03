@@ -25,3 +25,5 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
   <p class="text">ОКВЭД (основной вид деятельности) – 41.20</p>
   <p class="text">Генеральный директор – Голдырев Андрей Николаевич, действующий на основании Устава</p>
 </div>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/blocks/footer.html");
+include($_SERVER["DOCUMENT_ROOT"] . "/blocks/counters.html"); ?>

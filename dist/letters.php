@@ -29,3 +29,5 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
   <a class="letter__img" href="/img/letters/lpp-almed.jpg">Благодарственное письмо от санаторий-профилакторий Алмед</a>
   <a class="letter__img" href="/img/letters/metafraks.jpg">Благодарственное письмо от ОАО Метафракс</a>
 </div>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/blocks/footer.html");
+include($_SERVER["DOCUMENT_ROOT"] . "/blocks/counters.html"); ?>

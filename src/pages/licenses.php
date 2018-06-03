@@ -31,3 +31,5 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
     <a class="link license__link" target="_blank" href="/img/licenses/project-work-pdf.pdf">Смотреть в PDF</a>
   </div>
 </div>
+<?php include($_SERVER["DOCUMENT_ROOT"] . "/blocks/footer.html");
+include($_SERVER["DOCUMENT_ROOT"] . "/blocks/counters.html"); ?>
