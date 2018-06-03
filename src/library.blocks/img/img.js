@@ -1,6 +1,6 @@
 ﻿'use strict';
 (function () {
-  var imgAll = document.querySelectorAll('.img');
+  var imgLetters = document.querySelectorAll('.letter__img');
   var imgBig = document.querySelector('.img__big');
   var imgPopup = document.querySelector('.img__popup');
   var imgClose = document.querySelector('.img__close');
@@ -12,8 +12,8 @@
     document.body.classList.remove('img__modal-open');
   };
 
-  var getArrayImageSrc = [].map.call(imgAll, function (it) {
-    return it.src;
+  var getArrayImageSrc = [].map.call(imgLetters, function (it) {
+    return it.href;
   });
 
   for (var j = 0; j < getArrayImageSrc.length; j++) {
@@ -25,7 +25,6 @@
   var findIndex = function (array, value) {
     return array.indexOf(value);
   };
-
 
   var buttonRightClick = function () {
     var i = findIndex(getArrayImageSrc, imgBig.src);
@@ -54,17 +53,18 @@
   };
 
   var openPhoto = function (image) {
-    var imageSrc = image.src;
+    var imageSrc = image.href;
     imgBig.src = imageSrc;
     imgPopup.style.display = 'flex';
     document.body.classList.add('img__modal-open');
   };
 
-  imgAll.forEach(function (img) {
-    if (img.src === window.location.href) {
+  imgLetters.forEach(function (img) {
+    if (img.href === window.location.href) {
       img.remove();
     }
-    img.addEventListener('click', function () {
+    img.addEventListener('click', function (evt) {
+      evt.preventDefault();
       openPhoto(img);
       imgButtomRight.addEventListener('click', buttonRightClick);
       imgButtomLeft.addEventListener('click', buttonLeftClick);
