@@ -86,86 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/common.blocks/navigation/navigation.js":
-/*!****************************************************!*\
-  !*** ./src/common.blocks/navigation/navigation.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-(function () {
-  var tabs = document.querySelectorAll('.tab');
-  var navLink = document.querySelectorAll('.navigation__link');
-  var tabActive = 'tab--active';
-  var navLinkActive = 'navigation__link--active';
-
-  var tabAbout = document.querySelector('.tab__about');
-  var tabLinkAbout = document.querySelector('.navigation__about');
-  var tabLicenses = document.querySelector('.tab__licenses');
-  var tabLinkLicenses = document.querySelector('.navigation__licenses');
-  var tabOrders = document.querySelector('.tab__orders');
-  var tabLinkOrders = document.querySelector('.navigation__orders');
-  var tabLetters = document.querySelector('.tab__letters');
-  var tabLinkLetters = document.querySelector('.navigation__letters');
-  var tabContacts = document.querySelector('.tab__contacts');
-  var tabLinkContacts = document.querySelector('.navigation__contacts');
-
-  var clearClasses = function clearClasses() {
-    tabs.forEach(function (tab) {
-      tab.classList.remove(tabActive);
-    });
-
-    navLink.forEach(function (link) {
-      link.classList.remove(navLinkActive);
-    });
-  };
-
-  var tabClicked = function tabClicked(tabLink, tabOpened) {
-    tabLink.classList.add(navLinkActive);
-    tabOpened.classList.add(tabActive);
-  };
-
-  var tabAboutClick = function tabAboutClick() {
-    clearClasses();
-    tabClicked(tabLinkAbout, tabAbout);
-  };
-
-  var tabLicensesClick = function tabLicensesClick() {
-    clearClasses();
-    tabClicked(tabLinkLicenses, tabLicenses);
-  };
-
-  var tabOrdersClick = function tabOrdersClick() {
-    clearClasses();
-    tabClicked(tabLinkOrders, tabOrders);
-  };
-
-  var tabLettersClick = function tabLettersClick() {
-    clearClasses();
-    tabClicked(tabLinkLetters, tabLetters);
-  };
-
-  var tabContactsClick = function tabContactsClick() {
-    clearClasses();
-    tabClicked(tabLinkContacts, tabContacts);
-  };
-
-  tabLinkAbout.addEventListener('click', tabAboutClick);
-  tabLinkLicenses.addEventListener('click', tabLicensesClick);
-  tabLinkOrders.addEventListener('click', tabOrdersClick);
-  tabLinkLetters.addEventListener('click', tabLettersClick);
-  tabLinkContacts.addEventListener('click', tabContactsClick);
-})();
-
-/***/ }),
-
-/***/ "./src/library.blocks/img/img.js":
-/*!***************************************!*\
-  !*** ./src/library.blocks/img/img.js ***!
-  \***************************************/
+/***/ "./src/common.blocks/letter/letter.js":
+/*!********************************************!*\
+  !*** ./src/common.blocks/letter/letter.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -177,8 +101,8 @@
   var imgBig = document.querySelector('.img__big');
   var imgPopup = document.querySelector('.img__popup');
   var imgClose = document.querySelector('.img__close');
-  var imgButtomRight = imgPopup.querySelector('.img__button--right');
-  var imgButtomLeft = imgPopup.querySelector('.img__button--left');
+  var imgButtonRight = imgPopup.querySelector('.img__button--right');
+  var imgButtonLeft = imgPopup.querySelector('.img__button--left');
 
   var closePopup = function closePopup() {
     imgPopup.style.display = '';
@@ -239,8 +163,94 @@
     img.addEventListener('click', function (evt) {
       evt.preventDefault();
       openPhoto(img);
-      imgButtomRight.addEventListener('click', buttonRightClick);
-      imgButtomLeft.addEventListener('click', buttonLeftClick);
+      imgButtonRight.addEventListener('click', buttonRightClick);
+      imgButtonLeft.addEventListener('click', buttonLeftClick);
+      imgBig.addEventListener('click', buttonRightClick);
+    });
+  });
+  imgClose.addEventListener('click', closePopup);
+})();
+
+/***/ }),
+
+/***/ "./src/common.blocks/license/license.js":
+/*!**********************************************!*\
+  !*** ./src/common.blocks/license/license.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+(function () {
+  var imgLicenses = document.querySelectorAll('.license__img');
+  var imgBig = document.querySelector('.img__big');
+  var imgPopup = document.querySelector('.img__popup');
+  var imgClose = document.querySelector('.img__close');
+  var imgButtonRight = imgPopup.querySelector('.img__button--right');
+  var imgButtonLeft = imgPopup.querySelector('.img__button--left');
+
+  var closePopup = function closePopup() {
+    imgPopup.style.display = '';
+    document.body.classList.remove('img__modal-open');
+  };
+
+  var getArrayImageSrc = [].map.call(imgLicenses, function (it) {
+    return it.src;
+  });
+
+  for (var j = 0; j < getArrayImageSrc.length; j++) {
+    while (getArrayImageSrc[j] === window.location.href) {
+      getArrayImageSrc.pop();
+    }
+  }
+
+  var findIndex = function findIndex(array, value) {
+    return array.indexOf(value);
+  };
+
+  var buttonRightClick = function buttonRightClick() {
+    var i = findIndex(getArrayImageSrc, imgBig.src);
+    if (i === 0) {
+      i = i + 1;
+    } else {
+      i = findIndex(getArrayImageSrc, imgBig.src) + 1;
+    }
+    if (i >= getArrayImageSrc.length) {
+      i = 0;
+    }
+    imgBig.src = getArrayImageSrc[i];
+  };
+
+  var buttonLeftClick = function buttonLeftClick() {
+    var i = findIndex(getArrayImageSrc, imgBig.src);
+    if (i === 0) {
+      i = i - 1;
+    } else {
+      i = findIndex(getArrayImageSrc, imgBig.src) - 1;
+    }
+    if (i < 0) {
+      i = getArrayImageSrc.length - 1;
+    }
+    imgBig.src = getArrayImageSrc[i];
+  };
+
+  var openPhoto = function openPhoto(image) {
+    var imageSrc = image.src;
+    imgBig.src = imageSrc;
+    imgPopup.style.display = 'flex';
+    document.body.classList.add('img__modal-open');
+  };
+
+  imgLicenses.forEach(function (img) {
+    if (img.src === window.location.href) {
+      img.remove();
+    }
+    img.addEventListener('click', function () {
+      openPhoto(img);
+      imgButtonRight.addEventListener('click', buttonRightClick);
+      imgButtonLeft.addEventListener('click', buttonLeftClick);
       imgBig.addEventListener('click', buttonRightClick);
     });
   });
@@ -297,15 +307,15 @@
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************************************************************************!*\
-  !*** multi ./src/main.js ./src/library.blocks/img/img.js ./src/common.blocks/navigation/navigation.js ./src/style.scss ***!
-  \*************************************************************************************************************************/
+/*!************************************************************************************************************************!*\
+  !*** multi ./src/main.js ./src/common.blocks/letter/letter.js ./src/common.blocks/license/license.js ./src/style.scss ***!
+  \************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! ./src/main.js */"./src/main.js");
-__webpack_require__(/*! ./src/library.blocks/img/img.js */"./src/library.blocks/img/img.js");
-__webpack_require__(/*! ./src/common.blocks/navigation/navigation.js */"./src/common.blocks/navigation/navigation.js");
+__webpack_require__(/*! ./src/common.blocks/letter/letter.js */"./src/common.blocks/letter/letter.js");
+__webpack_require__(/*! ./src/common.blocks/license/license.js */"./src/common.blocks/license/license.js");
 module.exports = __webpack_require__(/*! ./src/style.scss */"./src/style.scss");
 
 
