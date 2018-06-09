@@ -4,8 +4,8 @@
   var imgBig = document.querySelector('.img__big');
   var imgPopup = document.querySelector('.img__popup');
   var imgClose = document.querySelector('.img__close');
-  var imgButtomRight = imgPopup.querySelector('.img__button--right');
-  var imgButtomLeft = imgPopup.querySelector('.img__button--left');
+  var imgButtonRight = imgPopup.querySelector('.img__button--right');
+  var imgButtonLeft = imgPopup.querySelector('.img__button--left');
 
   var closePopup = function () {
     imgPopup.style.display = '';
@@ -66,8 +66,8 @@
     img.addEventListener('click', function (evt) {
       evt.preventDefault();
       openPhoto(img);
-      imgButtomRight.addEventListener('click', buttonRightClick);
-      imgButtomLeft.addEventListener('click', buttonLeftClick);
+      imgButtonRight.addEventListener('click', buttonRightClick);
+      imgButtonLeft.addEventListener('click', buttonLeftClick);
       imgBig.addEventListener('click', buttonRightClick);
     });
   });
