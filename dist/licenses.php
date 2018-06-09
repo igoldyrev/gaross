@@ -13,7 +13,8 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
       <img class="license__img" src="/img/licenses/mchs-1.jpg" alt="Лицензия МЧС<">
     </div>
     <div class="license__link-inner">
-      <i class="fa fa-file-pdf-o license__icon"></i><a class="link license__link" target="_blank" href="/img/licenses/mchs-pdf.pdf">Смотреть в PDF</a>
+      <i class="fa fa-file-pdf-o license__icon"></i><a class="link license__link" target="_blank"
+                                                       href="/img/licenses/mchs-pdf.pdf">Смотреть в PDF</a>
     </div>
   </div>
   <div class="license" id="sro-stroiteli-urala">
@@ -24,7 +25,8 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
       <img class="license__img" src="/img/licenses/smr-220317-0.jpg" alt="СРО Строители Урала">
     </div>
     <div class="license__link-inner">
-      <i class="fa fa-file-pdf-o license__icon"></i><a class="link license__link" target="_blank" href="/img/licenses/smr-220317-pdf.pdf">Смотреть в PDF</a>
+      <i class="fa fa-file-pdf-o license__icon"></i><a class="link license__link" target="_blank"
+                                                       href="/img/licenses/smr-220317-pdf.pdf">Смотреть в PDF</a>
     </div>
   </div>
   <div class="license" id="sro-project-work">
@@ -33,7 +35,8 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
       <img class="license__img" src="/img/licenses/project-work-0.jpg" alt="СРО на проектные работы">
     </div>
     <div class="license__link-inner">
-      <i class="fa fa-file-pdf-o license__icon"></i><a class="link license__link" target="_blank" href="/img/licenses/project-work-pdf.pdf">Смотреть в PDF</a>
+      <i class="fa fa-file-pdf-o license__icon"></i><a class="link license__link" target="_blank"
+                                                       href="/img/licenses/project-work-pdf.pdf">Смотреть в PDF</a>
     </div>
   </div>
 </div>
