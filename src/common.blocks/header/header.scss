@@ -21,10 +21,14 @@
 }
 
 @include adaptive(pad) {
-  .header__wrap {
+  .header {
+    &__wrap {
+      width: 100%;
+    }
 
-    width: 100%;
-    margin: 0 15px;
+    &__logo {
+      margin-left: 15px;
+    }
   }
 }
 

@@ -50,17 +50,11 @@
 @import "mobile.blocks/button/__zakaz/_call/button__zakaz_call";
 //Шапка сайта
 @import "common.blocks/header/header";
-//
-//
 //Навигация на сайте
 @import "common.blocks/navigation/navigation";
-@import "tablet.blocks/navigation/navigation";
 @import "mobile.blocks/navigation/navigation";
-@import "tablet.blocks/navigation/__list/navigation__list";
 @import "mobile.blocks/navigation/__list/navigation__list";
-@import "tablet.blocks/navigation/__list-item/navigation__list-item";
 @import "mobile.blocks/navigation/__list-item/navigation__list-item";
-@import "tablet.blocks/navigation/__link/navigation__link";
 @import "mobile.blocks/navigation/__link/navigation__link";
 //
 ////Навигация на мобильных устройствах
