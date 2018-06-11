@@ -48,17 +48,14 @@
 @import "common.blocks/button/__zakaz/_help/button__zakaz_help";
 @import "common.blocks/button/__zakaz/_call/button__zakaz_call";
 @import "mobile.blocks/button/__zakaz/_call/button__zakaz_call";
+
 //Шапка сайта
 @import "common.blocks/header/header";
 //Навигация на сайте
 @import "common.blocks/navigation/navigation";
-//
-////Навигация на мобильных устройствах
-//@import "common.blocks/navigation-mobile/navigation-mobile";
-//@import "mobile.blocks/navigation-mobile/navigation-mobile";
-//@import "mobile.blocks/navigation-mobile/__link-wrap/navigation-mobile__link-wrap";
-//@import "mobile.blocks/navigation-mobile/__link/navigation-mobile__link";
-//
+//Навигация на мобильных устройствах
+@import "common.blocks/navigation-mobile/navigation-mobile";
+
 //Подвал сайта
 @import "common.blocks/footer/footer";
 //Табы

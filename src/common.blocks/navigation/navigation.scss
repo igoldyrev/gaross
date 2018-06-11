@@ -20,8 +20,11 @@
   &__link {
     display: block;
 
-    font-size: 0.9em;
-    font-weight: 400;
+    font: {
+      family: $font;
+      size: 0.9em;
+      weight: 400;
+    }
 
     color: $primarycolor;
     line-height: 40px;
@@ -72,5 +75,26 @@
 @include adaptive(mobile) {
   .navigation {
     display: none;
+
+    &__list {
+      display: none;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__link {
+      width: 100%;
+      line-height: 30px;
+      color: #FFFFFF;
+      margin: 0;
+      border: none;
+      border-bottom: 1px solid #FFFFFF;
+      border-radius: 0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
 }
