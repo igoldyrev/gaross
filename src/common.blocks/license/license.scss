@@ -17,15 +17,6 @@
     cursor: pointer;
   }
 
-  &__link {
-    color: $primarycolor;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
   &__link-inner {
     text-align: right;
   }
