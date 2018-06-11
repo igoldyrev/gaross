@@ -9,6 +9,7 @@ module.exports = {
         './src/main.js',
       './src/common.blocks/letter/letter.js',
       './src/common.blocks/license/license.js',
+      './src/common.blocks/navigation-mobile/navigation-mobile.js',
         './src/style.scss'
     ],
     output: {

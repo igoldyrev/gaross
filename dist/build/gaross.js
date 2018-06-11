@@ -259,6 +259,28 @@
 
 /***/ }),
 
+/***/ "./src/common.blocks/navigation-mobile/navigation-mobile.js":
+/*!******************************************************************!*\
+  !*** ./src/common.blocks/navigation-mobile/navigation-mobile.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+(function () {
+  var navMobileLink = document.querySelector('.navigation-mobile__link');
+  var navMobileList = document.querySelector('.navigation__list--mobile');
+
+  navMobileLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    navMobileList.classList.toggle('navigation__list--active');
+  });
+})();
+
+/***/ }),
+
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
@@ -307,15 +329,16 @@
 /***/ }),
 
 /***/ 0:
-/*!************************************************************************************************************************!*\
-  !*** multi ./src/main.js ./src/common.blocks/letter/letter.js ./src/common.blocks/license/license.js ./src/style.scss ***!
-  \************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** multi ./src/main.js ./src/common.blocks/letter/letter.js ./src/common.blocks/license/license.js ./src/common.blocks/navigation-mobile/navigation-mobile.js ./src/style.scss ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! ./src/main.js */"./src/main.js");
 __webpack_require__(/*! ./src/common.blocks/letter/letter.js */"./src/common.blocks/letter/letter.js");
 __webpack_require__(/*! ./src/common.blocks/license/license.js */"./src/common.blocks/license/license.js");
+__webpack_require__(/*! ./src/common.blocks/navigation-mobile/navigation-mobile.js */"./src/common.blocks/navigation-mobile/navigation-mobile.js");
 module.exports = __webpack_require__(/*! ./src/style.scss */"./src/style.scss");
 
 
