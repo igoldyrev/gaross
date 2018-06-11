@@ -102,6 +102,10 @@
       &:last-child {
         border-bottom: none;
       }
+
+      &:hover, &:active {
+        border-bottom: 1px solid #FFFFFF;
+      }
     }
   }
 }
