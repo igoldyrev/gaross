@@ -3,14 +3,15 @@
   font-size: 1.1em;
   font-weight: 500;
   line-height: inherit;
-  color: inherit;
-  text-decoration: underline;
+  color: $textgray;
+  text-decoration: none;
+  border-bottom: 1px solid $primarycolor;
   cursor: pointer;
 
   &--color-hover {
 
     &:hover {
-      color: $subcolor;
+      color: $primarycolor;
       transition: 0.5s ease-in-out;
     }
   }
