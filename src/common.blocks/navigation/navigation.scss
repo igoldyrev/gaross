@@ -81,6 +81,12 @@
       width: 100%;
       flex-direction: row;
       flex-wrap: wrap;
+
+      &--active {
+        display: flex;
+        height: fit-content;
+        transition: 0.5s ease-in-out;
+      }
     }
 
     &__link {
