@@ -5,7 +5,7 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/header.html");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
 
 <div class="wrapper">
-  <h1 class="title title-h1">Общество с ограниченной ответсвенностью "Гаросс"</h1>
+  <h1 class="title title-h1">Общество с ограниченной ответственностью "Гаросс"</h1>
   <p class="text"><strong>Офис:</strong> г.Пермь, ул. Дзержинского 15, офис 10</p>
   <p class="text"><strong>Производственная база:</strong> г.Пермь, ул. Дзержинского 47 Литера Б1</p>
   <h2 class="title title-h2">Связаться с нами</h2>
