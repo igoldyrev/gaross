@@ -12,7 +12,7 @@
 
     font-size: 1em;
     font-weight: 400;
-    color: #666;
+    color: $titlegray;
     text-decoration: none;
 
     &:hover {
@@ -28,5 +28,17 @@
   &__list {
     padding: 10px;
     margin-bottom: 15px;
+  }
+}
+
+@include adaptive(mobile) {
+  .letter {
+    &__img {
+      font-size: 0.8em;
+    }
+
+    &__icon {
+      font-size: 1em;
+    }
   }
 }
