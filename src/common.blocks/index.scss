@@ -1,0 +1,38 @@
+.index {
+  &__title {
+    font-size: 1.4em;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__work-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+  &__work {
+    width: 49%;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 15px;
+  }
+
+  &__name {
+    font: {
+      family: $font;
+      size: 1.2em;
+      weight: 400;
+    }
+    color: $textgray;
+    line-height: 24px;
+  }
+
+}
