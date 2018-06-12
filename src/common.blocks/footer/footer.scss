@@ -13,6 +13,14 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    &--left {
+      text-align: left;
+    }
+
+    &--right {
+      text-align: right;
+    }
   }
 
   &__list-item {
@@ -42,8 +50,6 @@
 @include adaptive(pad) {
   .footer {
     width: 100%;
-    justify-content: center;
-    align-items: center;
 
     margin: 0;
     padding: 20px 10px;
@@ -63,16 +69,13 @@
 
     padding: 10px 0;
 
-    &__copyright + &__links {
-      padding-bottom: 10px;
-    }
-
     &__link {
       font-size: 0.8em;
     }
 
     &__list-item {
       text-align: center;
+      font-size: 0.8em;
     }
   }
 }
