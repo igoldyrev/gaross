@@ -16,3 +16,9 @@
     }
   }
 }
+
+@include adaptive(mobile) {
+  .link {
+    font-size: 0.9em;
+  }
+}

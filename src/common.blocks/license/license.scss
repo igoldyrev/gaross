@@ -5,16 +5,9 @@
   border-radius: 5px;
   box-sizing: border-box;
 
-  &__wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   &__img {
     width: 150px;
     height: auto;
-    cursor: pointer;
   }
 
   &__link-inner {
@@ -25,5 +18,17 @@
     font-size: 1.3em;
     margin-right: 10px;
     color: $redcolor;
+  }
+}
+
+@include adaptive(mobile) {
+  .license {
+    &__link-inner {
+      text-align: center;
+    }
+
+    &__icon {
+      font-size: 1em;
+    }
   }
 }
