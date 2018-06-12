@@ -13,4 +13,17 @@
 
     cursor: pointer;
   }
+
+  &__inner {
+    margin-bottom: 15px;
+  }
+}
+
+@include adaptive(mobile) {
+  .contacts {
+    &__link {
+      font-size: 0.8em;
+      line-height: 1.5;
+    }
+  }
 }
