@@ -10,10 +10,10 @@ echo $keywords[3][title];
 echo "</title>";
 echo "<meta name='description' content='";
 echo $keywords[3][description];
-echo "'/>'";
+echo "'/>";
 echo "<meta name='keywords' content='";
 echo $keywords[3][keywords];
-echo "'/>'" ?>
+echo "'/>" ?>
 
 <div class="wrapper">
   <h1 class="title title-h1">Благодарственные письма</h1>

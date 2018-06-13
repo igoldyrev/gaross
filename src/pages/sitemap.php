@@ -10,10 +10,10 @@ echo $keywords[5][title];
 echo "</title>";
 echo "<meta name='description' content='";
 echo $keywords[5][description];
-echo "'/>'";
+echo "'/>";
 echo "<meta name='keywords' content='";
 echo $keywords[5][keywords];
-echo "'/>'" ?>
+echo "'/>" ?>
 
 <div class="wrapper">
   <h1 class="title title-h1">Карта сайта</h1>

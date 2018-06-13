@@ -10,10 +10,10 @@ echo $keywords[4][title];
 echo "</title>";
 echo "<meta name='description' content='";
 echo $keywords[4][description];
-echo "'/>'";
+echo "'/>";
 echo "<meta name='keywords' content='";
 echo $keywords[4][keywords];
-echo "'/>'" ?>
+echo "'/>" ?>
 
 <div class="wrapper">
   <h1 class="title title-h1">Общество с ограниченной ответственностью "Гаросс"</h1>
