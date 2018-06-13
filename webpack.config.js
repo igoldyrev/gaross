@@ -77,6 +77,10 @@ module.exports = {
           {
             from: './src/fa',
             to: './fa'
+          },
+          {
+            from: './src/technical_files',
+            to: './'
           }
         ]),
     ],
