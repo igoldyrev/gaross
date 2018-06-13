@@ -1,8 +1,19 @@
 <?php
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/metatags.php");
+include($_SERVER["DOCUMENT_ROOT"] . "/blocks/keywords.php");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation-mobile.html");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/header.html");
-include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
+include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html");
+
+echo "<title>$titleconst";
+echo $keywords[4][title];
+echo "</title>";
+echo "<meta name='description' content='";
+echo $keywords[4][description];
+echo "'/>'";
+echo "<meta name='keywords' content='";
+echo $keywords[4][keywords];
+echo "'/>'" ?>
 
 <div class="wrapper">
   <h1 class="title title-h1">Общество с ограниченной ответственностью "Гаросс"</h1>

@@ -1,8 +1,13 @@
 <?php
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/metatags.php");
+include($_SERVER["DOCUMENT_ROOT"] . "/blocks/keywords.php");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation-mobile.html");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/header.html");
-include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
+include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html");
+
+echo "<title>$titleconst"; echo $keywords[1][title]; echo "</title>";
+echo "<meta name='description' content='"; echo $keywords[1][description]; echo "'/>'";
+echo "<meta name='keywords' content='"; echo $keywords[1][keywords]; echo "'/>'" ?>
 
 <div class="wrapper">
   <h1 class="title title-h1">Лицензии</h1>

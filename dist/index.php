@@ -1,8 +1,13 @@
 <?php
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/metatags.php");
+include($_SERVER["DOCUMENT_ROOT"] . "/blocks/keywords.php");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation-mobile.html");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/header.html");
-include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
+include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html");
+
+echo "<title>$titleconst"; echo $keywords[0][title]; echo "</title>";
+echo "<meta name='description' content='"; echo $keywords[0][description]; echo "'/>'";
+echo "<meta name='keywords' content='"; echo $keywords[0][keywords]; echo "'/>'" ?>
 
 <div class="wrapper">
   <h1 class="title title-h1 index__title">ООО «ГАРОСС» успешно работает с 2010 года</h1>
@@ -13,7 +18,8 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
   <h2 class="title title-h2">Основные виды работ:</h2>
   <div class="index__work-wrap">
     <div class="index__work">
-      <img class="index__img" src="/img/index/civil_engineering.jpg" alt="Комплексное промышленное и гражданское строительство">
+      <img class="index__img" src="/img/index/civil_engineering.jpg"
+           alt="Комплексное промышленное и гражданское строительство">
       <h2 class="index__name">Комплексное промышленное и гражданское строительство</h2>
     </div>
     <div class="index__work">
