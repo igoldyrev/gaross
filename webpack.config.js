@@ -66,6 +66,10 @@ module.exports = {
                 from: './src/img',
                 to: './img'
             },
+          {
+            from: './src/pdf',
+            to: './pdf'
+          },
             {
                 from: './src/pages',
                 to: './'
