@@ -5,9 +5,15 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation-mobile.html");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/header.html");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html");
 
-echo "<title>$titleconst"; echo $keywords[2][title]; echo "</title>";
-echo "<meta name='description' content='"; echo $keywords[2][description]; echo "'/>'";
-echo "<meta name='keywords' content='"; echo $keywords[2][keywords]; echo "'/>'" ?>
+echo "<title>$titleconst";
+echo $keywords[2][title];
+echo "</title>";
+echo "<meta name='description' content='";
+echo $keywords[2][description];
+echo "'/>'";
+echo "<meta name='keywords' content='";
+echo $keywords[2][keywords];
+echo "'/>'" ?>
 
 <div class="wrapper">
   <h1 class="title title-h1">Заказчики</h1>

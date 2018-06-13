@@ -5,9 +5,15 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation-mobile.html");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/header.html");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html");
 
-echo "<title>$titleconst"; echo $keywords[0][title]; echo "</title>";
-echo "<meta name='description' content='"; echo $keywords[0][description]; echo "'/>'";
-echo "<meta name='keywords' content='"; echo $keywords[0][keywords]; echo "'/>'" ?>
+echo "<title>$titleconst";
+echo $keywords[0][title];
+echo "</title>";
+echo "<meta name='description' content='";
+echo $keywords[0][description];
+echo "'/>'";
+echo "<meta name='keywords' content='";
+echo $keywords[0][keywords];
+echo "'/>'" ?>
 
 <div class="wrapper">
   <h1 class="title title-h1 index__title">ООО «ГАРОСС» успешно работает с 2010 года</h1>
