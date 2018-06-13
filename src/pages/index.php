@@ -13,20 +13,21 @@ include($_SERVER["DOCUMENT_ROOT"] . "/blocks/navigation.html"); ?>
   <h2 class="title title-h2">Основные виды работ:</h2>
   <div class="index__work-wrap">
     <div class="index__work">
-      <img class="index__img" src="http://via.placeholder.com/350x150" alt="">
+      <img class="index__img" src="/img/index/civil_engineering.jpg"
+           alt="Комплексное промышленное и гражданское строительство">
       <h2 class="index__name">Комплексное промышленное и гражданское строительство</h2>
     </div>
     <div class="index__work">
-      <img class="index__img" src="http://via.placeholder.com/350x150" alt="">
+      <img class="index__img" src="/img/index/drawing_project.jpg" alt="Проектирование">
       <h2 class="index__name">Проектирование</h2>
     </div>
     <div class="index__work">
-      <img class="index__img" src="http://via.placeholder.com/350x150" alt="">
+      <img class="index__img" src="/img/index/ventilation_installation.jpg" alt="Монтаж оборудования">
       <h2 class="index__name">Поставка, монтаж и пуско-наладка всего необходимого оборудования для систем водоснабжения
         и канализации, вентиляции, бесперебойного электропитания, сигнализации и связи</h2>
     </div>
     <div class="index__work">
-      <img class="index__img" src="http://via.placeholder.com/350x150" alt="">
+      <img class="index__img" src="/img/index/service.png" alt="Гарантийное и постгарантийное техническое обслуживание">
       <h2 class="index__name">Гарантийное и постгарантийное техническое обслуживание</h2>
     </div>
   </div>
