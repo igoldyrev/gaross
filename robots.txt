@@ -1,6 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /modules
-Disallow: /js
-Sitemap: https://gaross59.ru/sitemap.xml
-Host: https://gaross59.ru/

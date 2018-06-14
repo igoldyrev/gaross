@@ -1,0 +1,19 @@
+.title-h3 {
+  font-size: 1.2em;
+  line-height: 24px;
+  color: $textgray;
+}
+
+@include adaptive(pad) {
+  .title-h3 {
+    font-size: 1em;
+    line-height: 22px;
+  }
+}
+
+@include adaptive(mobile) {
+  .title-h3 {
+    font-size: 0.9em;
+    line-height: 20px;
+  }
+}

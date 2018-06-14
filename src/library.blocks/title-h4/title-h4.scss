@@ -1,0 +1,19 @@
+.title-h4 {
+  font-size: 1em;
+  line-height: 20px;
+  color: $textgray;
+}
+
+@include adaptive(pad) {
+  .title-h4 {
+    font-size: 0.9em;
+    line-height: 20px;
+  }
+}
+
+@include adaptive(mobile) {
+  .title-h4 {
+    font-size: 0.9em;
+    line-height: 20px;
+  }
+}

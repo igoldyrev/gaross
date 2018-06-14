@@ -1,0 +1,73 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+@import "library.blocks/clearfix/clearfix";
+
+//Тело и обертка
+@import "library.blocks/body/body";
+@import "library.blocks/wrapper/wrapper";
+
+//Заголовки
+@import "library.blocks/title/title";
+@import "library.blocks/title-h1/title-h1";
+@import "library.blocks/title-h2/title-h2";
+@import "library.blocks/title-h3/title-h3";
+@import "library.blocks/title-h4/title-h4";
+@import "library.blocks/title-h5/title-h5";
+@import "library.blocks/title-h6/title-h6";
+
+//Текст, списки и ссылки
+@import "library.blocks/text/text";
+@import "library.blocks/span/span";
+@import "library.blocks/list/list";
+@import "common.blocks/list/__unsorted/list__unsorted";
+@import "common.blocks/list/_decimal/list_decimal";
+@import "library.blocks/link/link";
+@import "common.blocks/link/link";
+
+//Изображения
+@import "library.blocks/img/img";
+
+//Поля ввода
+@import "library.blocks/form/form";
+@import "library.blocks/form/g-recaptcha";
+
+//Кнопки
+@import "library.blocks/button/button";
+@import "mobile.blocks/button/button";
+@import "common.blocks/button/__buy/button__buy";
+@import "mobile.blocks/button/__buy/button__buy";
+@import "mobile.blocks/button/_cell/button_cell";
+@import "common.blocks/button/__buy/_prokat/button__buy_prokat";
+@import "common.blocks/button/__about/button__about";
+@import "mobile.blocks/button/__about/button__about";
+@import "common.blocks/button/__zakaz/button__zakaz";
+@import "mobile.blocks/button/__zakaz/button__zakaz";
+@import "common.blocks/button/__zakaz/_prokat/button__zakaz_prokat";
+@import "common.blocks/button/__zakaz/_help/button__zakaz_help";
+@import "common.blocks/button/__zakaz/_call/button__zakaz_call";
+@import "mobile.blocks/button/__zakaz/_call/button__zakaz_call";
+
+//Шапка сайта
+@import "common.blocks/header/header";
+
+//Навигация на сайте
+@import "common.blocks/navigation/navigation";
+
+//Навигация на мобильных устройствах
+@import "common.blocks/navigation-mobile/navigation-mobile";
+
+//Подвал сайта
+@import "common.blocks/footer/footer";
+
+//блоки с благодарственными письмами
+@import "common.blocks/letter/letter";
+//блоки страницы Контакты
+@import "common.blocks/contacts/contacts";
+//блоки с лицензиями
+@import "common.blocks/license/license";
+//блоки с заказчиками
+@import "common.blocks/order";
+//блоки для главной страницы
+@import "common.blocks/index";

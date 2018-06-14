@@ -1,132 +1,96 @@
-var webpack = require('webpack');
-var path = require('path');
-var glob = require('glob');
-var glob = require('glob-all');
-
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var PurifyCSSPlugin = require('purifycss-webpack');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
-var autoprefixer = require('autoprefixer');
-
-var InProduction = (process.env.NODE_ENV === 'production');
+const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
-    entry: {
-
-        gaross: [
-                './js/main.js',
-                './modules/style.scss'
-
-        ],
-        //vendor: ['jquery']
-
-    },
-
+    entry: [
+        './src/main.js',
+      './src/common.blocks/letter/letter.js',
+      './src/common.blocks/license/license.js',
+      './src/common.blocks/navigation-mobile/navigation-mobile.js',
+        './src/style.scss'
+    ],
     output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: '[name].js'
-
+        path: path.resolve(__dirname, 'dist'),
+        filename: './build/gaross.js'
     },
-
+    devtool: "source-map",
     module: {
-
         rules: [
-
             {
-                test: /\.s[ac]ss$/,
-                use: ExtractTextPlugin.extract(
-                    {
-                        fallback: 'style-loader',
-                        use: [
-                            {
-                                loader: 'css-loader',
-                                options: {
-                                    /* minimize: false || { /* CSSNano options /}*/
-                                }
-                            },
-                            {
-                                loader: 'postcss-loader'
-                            },
-                            {
-                                loader: 'sass-loader'
-                            }]
-                    })
-            },
-
-            {
-                test: /\.css$/,
-                use: ['css-loader']
-            },
-
-            {
-
-                test: /\.(svg|eot|ttf|woff|woff2)$/,
-                loader: 'file-loader',
+            test: /\.js$/,
+            include: path.resolve(__dirname, 'src'),
+            use: {
+                loader: 'babel-loader',
                 options: {
-                    name: '/fonts/[name].[ext]'
+                    presets: 'env'
                 }
-            },
-
+            }
+        },
             {
-
-                test: /\.(png|jpe?g|gif)$/,
-                loaders: [
-                    {
-
-                        loader: 'file-loader',
+                test: /\.(sass|scss)$/,
+                include: path.resolve(__dirname, 'src'),
+                use: ExtractTextPlugin.extract({
+                    use: [{
+                        loader: "css-loader",
                         options: {
-                            name: 'images/[name].[ext]'
-
+                            sourceMap: true,
+                            minimize: true,
+                            url: false
                         }
                     },
-
-                    'img-loader'
-
-                ]
-
-            },
-
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: "babel-loader"
+                      {
+                        loader: 'postcss-loader'
+                      },
+                        {
+                            loader: "sass-loader",
+                            options: {
+                                sourceMap: true
+                            }
+                        }
+                    ]
+                })
             },
         ]
     },
-
     plugins: [
-
-        new ExtractTextPlugin('[name].css'),
-
-        /*new PurifyCSSPlugin({
-            // Give paths to parse for rules. These should be absolute!
-            paths: glob.sync([
-
-                path.join(__dirname, '*.html'),
-                path.join(__dirname, '*.php'),
-
-        ]),
-            minimize: InProduction
-
-        }),*/
-
-        new CleanWebpackPlugin(['build'], {
-            root: __dirname,
-            verbose: true,
-            dry: false
+        new ExtractTextPlugin({
+            filename: './build/gaross.css',
+            allChunks: true,
         }),
-
-        new webpack.LoaderOptionsPlugin({
-
-            minimize: InProduction
-        })
-
-    ]
-
+        new CleanWebpackPlugin(['dist']),
+        new CopyWebpackPlugin([
+            {
+                from: './src/img',
+                to: './img'
+            },
+          {
+            from: './src/pdf',
+            to: './pdf'
+          },
+            {
+                from: './src/pages',
+                to: './'
+            },
+            {
+                from: './src/html',
+                to: './blocks'
+            },
+          {
+            from: './src/fa',
+            to: './fa'
+          },
+          {
+            from: './src/technical_files',
+            to: './'
+          }
+        ]),
+    ],
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 8080
+  }
 };
-
-if (InProduction) {
-    module.exports.plugins.push(
-        new webpack.optimize.UglifyJsPlugin()
-    );
-}
