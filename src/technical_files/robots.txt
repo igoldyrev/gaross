@@ -1,0 +1,9 @@
+User-Agent: *
+Allow: /
+Disallow: /blocks
+Disallow: /build
+Disallow: /fa
+Disallow: /img
+Disallow: /pdf
+Sitemap: http://gaross59.ru/sitemap.xml
+Host: http://gaross59.ru
