@@ -43,12 +43,12 @@ echo "'/>" ?>
     </div>
   </div>
   <h2 class="title title-h2">Для решения данных задач ООО «ГАРОСС» имеет все необходимые лицензии</h2>
-  <p class="text">Свидетельство <a class="link" href="licenses.php/#sro-stroiteli-urala">СРО «Строители Урала»</a> № С –
+  <p class="text">Свидетельство <a class="link" href="licenses#sro-stroiteli-urala">СРО «Строители Урала»</a> № С –
     171-59-0961-59-220317 от 22.03.2017 г.</p>
-  <p class="text">Свидетельство <a class="link" href="licenses.php/#sro-project-work">СРО «Проектные организации
+  <p class="text">Свидетельство <a class="link" href="licenses#sro-project-work">СРО «Проектные организации
       Урала»</a> № П –
     112-59-0170-59-290317 от 29.03.2017 г.</p>
-  <p class="text">Лицензия <a class="link" href="licenses.php/#mchs">МЧС № 59-Б/00513</a> от 13.07.2017 г.</p>
+  <p class="text">Лицензия <a class="link" href="licenses#mchs">МЧС № 59-Б/00513</a> от 13.07.2017 г.</p>
   <p class="text">Сертификат соответствия ISO</p>
   <p class="text">А также располагает высококвалифицированным коллективом проектировщиков, менеджеров, инженеров,
     монтажников, прошедшим обучение и сертификацию.</p>
