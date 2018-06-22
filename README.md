@@ -1,6 +1,8 @@
 # Сайт строительной компании Гаросс, Пермь [![Build Status](https://travis-ci.org/igoldyrev/gaross.svg?branch=master)](https://travis-ci.org/igoldyrev/gaross)
+
 [http://gaross59.ru/](http://gaross59.ru/)
- ##Установка 
+
+## Установка 
 ```
 npm install
 ```
