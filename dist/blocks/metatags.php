@@ -19,7 +19,7 @@ $titleconst = "ООО Гаросс - комплексные решения в о
 <meta property="og:url" content="http://gaross59.ru"/>
 <meta property="og:site_name" content="ООО Гаросс"/>
 
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 <link rel="stylesheet" href="../fa/css/font-awesome.min.css">
 <link rel="stylesheet" href="../build/gaross.css">
