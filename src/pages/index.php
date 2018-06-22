@@ -51,7 +51,7 @@ echo "'/>" ?>
   <p class="text">Лицензия <a class="link" href="licenses#mchs">МЧС № 59-Б/00513</a> от 13.07.2017 г.</p>
   <p class="text">Сертификат соответствия ISO</p>
   <p class="text">А также располагает высококвалифицированным коллективом проектировщиков, менеджеров, инженеров,
-    монтажников, прошедшим обучение и сертификацию.</p>
+    монтажников, прошедших обучение и сертификацию.</p>
 </div>
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/blocks/footer.html");
 include($_SERVER["DOCUMENT_ROOT"] . "/blocks/counters.html"); ?>
