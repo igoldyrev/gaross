@@ -8,6 +8,7 @@ $titleconst = "ООО Гаросс - комплексные решения в о
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="robots" content="index,follow">
+<meta name='wmail-verification' content='b1d9cdf953074f8833b552738e678bde'/>
 
 <!-- meta property -->
 <meta property="place:location:latitude" content="58.008732586676025"/>
