@@ -21,6 +21,8 @@ $titleconst = "ООО Гаросс - комплексные решения в о
 <meta property="og:site_name" content="ООО Гаросс"/>
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" href="favicon.png"/>
+<link rel="apple-touch-icon" href="apple-touch-favicon.png"/>
 
 <link rel="stylesheet" href="../fa/css/font-awesome.min.css">
 <link rel="stylesheet" href="../build/gaross.css">

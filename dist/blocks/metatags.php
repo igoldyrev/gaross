@@ -8,8 +8,7 @@ $titleconst = "ООО Гаросс - комплексные решения в о
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="robots" content="index,follow">
-<meta name="yandex-verification" content="e4c4a7cc005363a6" />
-<meta name='wmail-verification' content='b1d9cdf953074f8833b552738e678bde' />
+<meta name='wmail-verification' content='b1d9cdf953074f8833b552738e678bde'/>
 
 <!-- meta property -->
 <meta property="place:location:latitude" content="58.008732586676025"/>
@@ -22,6 +21,8 @@ $titleconst = "ООО Гаросс - комплексные решения в о
 <meta property="og:site_name" content="ООО Гаросс"/>
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="apple-touch-favicon.png"/>
 
 <link rel="stylesheet" href="../fa/css/font-awesome.min.css">
 <link rel="stylesheet" href="../build/gaross.css">
