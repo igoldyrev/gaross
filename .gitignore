@@ -4,3 +4,4 @@ node_modules/
 # JetBrains template
 # User-specific stuff
 .idea/
+.vs/
