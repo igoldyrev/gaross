@@ -276,6 +276,18 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
+/***/ "./src/components/Body.js":
+/*!********************************!*\
+  !*** ./src/components/Body.js ***!
+  \********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\ndocument.querySelector('body').style.background = '#edeef0';\ndocument.querySelector('body').style.fontSize = '18px';\ndocument.querySelector('body').style.fontFamily = 'Roboto,Tahoma,sans-serif';\ndocument.querySelector('body').style.fontWeight = '400';\ndocument.querySelector('body').style.fontStyle = 'normal';\ndocument.querySelector('body').style.lineHeight = '24px';\ndocument.querySelector('body').style.color = '#666';\ndocument.querySelector('body').style.margin = 0;\ndocument.querySelector('body').style.padding = 0;\n\n//# sourceURL=webpack:///./src/components/Body.js?");
+
+/***/ }),
+
 /***/ "./src/components/IndexText.js":
 /*!*************************************!*\
   !*** ./src/components/IndexText.js ***!
@@ -296,7 +308,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_IndexText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/IndexText */ \"./src/components/IndexText.js\");\n\n // import './components/body';\n// import MenuListCls from \"./components/MenuList\";\n// import Wrapper from \"./components/Wrapper\";\n\n\nvar IndexTextElement = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IndexText__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n  text: \"ggdg\"\n});\nObject(react_dom__WEBPACK_IMPORTED_MODULE_1__[\"render\"])(IndexTextElement, document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_Body__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Body */ \"./src/components/Body.js\");\n/* harmony import */ var _components_IndexText__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/IndexText */ \"./src/components/IndexText.js\");\n\n\n\n\nvar IndexTextElement = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IndexText__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n  text: \"ggdg\"\n});\nObject(react_dom__WEBPACK_IMPORTED_MODULE_1__[\"render\"])(IndexTextElement, document.getElementById('root'));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

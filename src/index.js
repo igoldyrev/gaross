@@ -1,8 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-// import './components/body';
-// import MenuListCls from "./components/MenuList";
-// import Wrapper from "./components/Wrapper";
+import './components/Body';
 import IndexText from './components/IndexText';
 
 const IndexTextElement = <IndexText text="ggdg" />;
