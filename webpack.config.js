@@ -1,6 +1,6 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+//const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -10,13 +10,27 @@ module.exports = {
       filename: 'main.js'
   },
     module: {
-        rules: [
-          {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: {
-                loader: "babel-loader"
+      rules: [
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader"
+          }
+        },
+        {
+          test: /\.svg$/,
+          use: [
+            {
+              loader: "babel-loader"
+            },
+            {
+              loader: "react-svg-loader",
+              options: {
+                jsx: true
+              }
             }
+          ]
         }
       ]
     },
@@ -24,8 +38,8 @@ module.exports = {
         new CleanWebpackPlugin(),
         // new CopyWebpackPlugin([
         //   {
-        //     from: './src/img',
-        //      to: './img'
+        //     from: './src/svg',
+        //      to: './svg'
         //   },
         //   {
         //     from: './src/pdf',
