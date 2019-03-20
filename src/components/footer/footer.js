@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { device } from './../variables';
-import { variables } from './../variables';
+import { device } from '../variables';
+import { variables } from '../variables';
 
 const FooterDiv = styled.footer`
   display: flex;
