@@ -37,6 +37,12 @@ const HeaderSvg = styled.div`
 
   @media ${device.mobile} {
     width: 100%;
+
+    a {
+      svg {
+        width: 100%;
+      }
+    }
   }
 `;
 
