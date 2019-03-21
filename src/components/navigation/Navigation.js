@@ -44,13 +44,6 @@ const NavigationList = styled.div`
     height: 0;
     flex-direction: row;
     flex-wrap: wrap;
-
-    /* &--active {
-        display: flex;
-        height: fit-content;
-      }
-      state!
-      */
   }
 `;
 
@@ -147,14 +140,25 @@ const NavigationMobileLink = styled.a`
 `;
 
 class Navigation extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {class: ""};
+
+    this.press = this.press.bind(this);
+  }
+  press(){
+    let className = (this.state.class==="on")?"off":"on";
+    this.setState({class: className});
+  }
+
   render() {
     return (
       <NavigationDiv>
-        <NavigationList>
+        <NavigationList className={this.state.class}>
           <NavigationLink href="/">О компании</NavigationLink>
         </NavigationList>
         <NavigationMobileWrap>
-          <NavigationMobileLink href="#">Меню сайта</NavigationMobileLink>
+          <NavigationMobileLink onClick={this.press} href="#">Меню сайта</NavigationMobileLink>
         </NavigationMobileWrap>
       </NavigationDiv>
     );
