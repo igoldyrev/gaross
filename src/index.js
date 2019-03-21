@@ -1,19 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './components/Body';
-import IndexText from './components/IndexText';
-import Header from './components/header/Header';
+import HeaderWrap from './components/headerWrap/HeaderWrap';
 import Footer from './components/footer/footer';
-import Navigation from './components/navigation/Navigation';
 
-const HeaderWrapElement = <Header />;
+const HeaderWrapElement = <HeaderWrap />;
 const FooterWrapElement = <Footer />;
-const NavigationElement = <Navigation />;
 
 render(
   <div>
     {HeaderWrapElement}
-    {NavigationElement}
     {FooterWrapElement}
   </div>,
   document.getElementById('root')

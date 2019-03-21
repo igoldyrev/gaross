@@ -5,6 +5,10 @@ import { device } from './../variables';
 
 const HeaderDiv = styled.header`
   width: 100%;
+
+  @media ${device.mobile} {
+    order: 2;
+  }
 `;
 
 const HeaderWrap = styled.div`
