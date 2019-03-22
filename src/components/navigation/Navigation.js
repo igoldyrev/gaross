@@ -147,7 +147,7 @@ class Navigation extends React.Component {
     this.press = this.press.bind(this);
   }
   press(){
-    let className = (this.state.class==="on")?"off":"on";
+    let className = (this.state.class==="navigationMobile__active")?"":"navigationMobile__active";
     this.setState({class: className});
   }
 
@@ -156,6 +156,10 @@ class Navigation extends React.Component {
       <NavigationDiv>
         <NavigationList className={this.state.class}>
           <NavigationLink href="/">О компании</NavigationLink>
+          <NavigationLink href="/">Лицензии</NavigationLink>
+          <NavigationLink href="/">Заказчики</NavigationLink>
+          <NavigationLink href="/">Благодарственные письма</NavigationLink>
+          <NavigationLink href="/">Контакты</NavigationLink>
         </NavigationList>
         <NavigationMobileWrap>
           <NavigationMobileLink onClick={this.press} href="#">Меню сайта</NavigationMobileLink>
