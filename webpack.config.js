@@ -3,7 +3,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-//const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -13,7 +13,7 @@ module.exports = {
   output:
   {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'gaross.js'
+      filename: './build/gaross.js'
   },
   optimization: {
     minimizer: [
@@ -60,33 +60,37 @@ module.exports = {
   plugins: [
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin({
-          filename: "gaross.css"
-      })
-      // new CopyWebpackPlugin([
-      //   {
-      //     from: './src/svg',
-      //      to: './svg'
-      //   },
-      //   {
-      //     from: './src/pdf',
-      //     to: './pdf'
-      //   },
-      //   {
-      //     from: './src/pages',
-      //     to: './'
-      //   },
-      //   {
-      //     from: './src/html',
-      //     to: './blocks'
-      //   },
-      //   {
-      //     from: './src/fa',
-      //     to: './fa'
-      //   },
-      //   {
-      //     from: './src/technical_files',
-      //     to: './'
-      //   }
-      // ]),
+          filename: "./build/gaross.css"
+      }),
+      new CopyWebpackPlugin([
+        {
+          from: './src/components/index/img',
+           to: './img/index'
+        },
+        {
+          from: './public',
+          to: './'
+        },
+        // {
+        //   from: './src/pdf',
+        //   to: './pdf'
+        // },
+        // {
+        //   from: './src/pages',
+        //   to: './'
+        // },
+        // {
+        //   from: './src/html',
+        //   to: './blocks'
+        // },
+        // {
+        //   from: './src/fa',
+        //   to: './fa'
+        // },
+        // {
+        //   from: './src/technical_files',
+        //   to: './'
+        // }
+      ]),
   ]
 };
