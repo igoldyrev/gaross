@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { device } from '../../variables';
-import { variables } from '../../variables';
+import { device, variables } from '../../variables';
+import PropTypes from "prop-types";
 
 const TextSpan = styled.span`
   font-family: ${variables.font};
@@ -20,12 +20,14 @@ const TextSpan = styled.span`
   }
 `;
 
-class Span extends React.Component {
-  render() {
-    return(
-      <TextSpan>{this.props.text}</TextSpan>
-    );
-  }
+const propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
+function Span({ text }) {
+  return <TextSpan>{text}</TextSpan>;
 }
+
+Span.propTypes = propTypes;
 
 export default Span;

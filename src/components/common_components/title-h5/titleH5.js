@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { device } from '../../variables';
-import { variables } from '../../variables';
+import { device, variables } from '../../variables';
+import PropTypes from "prop-types";
 
 const TitleH5 = styled.h5`
   font-family: ${variables.fontTitle};
@@ -23,12 +23,14 @@ const TitleH5 = styled.h5`
   }
 `;
 
-class H5Title extends React.Component {
-  render() {
-    return(
-      <TitleH5>{this.props.text}</TitleH5>
-    );
-  }
+const propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
+function H5Title({ text }) {
+  return <TitleH5>{text}</TitleH5>;
 }
+
+H5Title.propTypes = propTypes;
 
 export default H5Title;

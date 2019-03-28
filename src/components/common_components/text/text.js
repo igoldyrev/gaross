@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { device } from '../../variables';
-import { variables } from '../../variables';
+import { device, variables } from '../../variables';
+import PropTypes from "prop-types";
 
 const TextBlock = styled.p`
   font-family: ${variables.font};
@@ -27,12 +27,14 @@ const TextBlock = styled.p`
   }
 `;
 
-class Text extends React.Component {
-  render() {
-    return(
-      <TextBlock>{this.props.text}</TextBlock>
-    );
-  }
+const propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
+function Text({ text }) {
+  return <TextBlock>{text}</TextBlock>;
 }
+
+Text.propTypes = propTypes;
 
 export default Text;

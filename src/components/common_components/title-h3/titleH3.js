@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { device } from '../../variables';
-import { variables } from '../../variables';
+import { device, variables } from '../../variables';
+import PropTypes from "prop-types";
 
 const TitleH3 = styled.h3`
   font-family: ${variables.fontTitle};
@@ -25,12 +25,14 @@ const TitleH3 = styled.h3`
   }
 `;
 
-class H3Title extends React.Component {
-  render() {
-    return(
-      <TitleH3>{this.props.text}</TitleH3>
-    );
-  }
+const propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
+function H3Title({ text }) {
+  return <TitleH3>{text}</TitleH3>;
 }
+
+H3Title.propTypes = propTypes;
 
 export default H3Title;
