@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { device } from '../../variables';
-import { variables } from '../../variables';
+import { device, variables } from '../../variables';
 
 const WrapperDiv = styled.div`
   width: 1220px;
@@ -24,12 +23,12 @@ const WrapperDiv = styled.div`
   }
 `;
 
-class Wrapper extends React.Component {
-  render() {
-    return(
-      <WrapperDiv></WrapperDiv>
-    );
-  }
+function Wrapper (props) {
+  return (
+    <WrapperDiv>
+      {props.children}
+    </WrapperDiv>
+  );
 }
 
 export default Wrapper;
