@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { device } from '../variables';
-import { variables } from '../variables';
+import { device, variables } from '../variables';
 
 const NavigationDiv = styled.nav`
   display: flex;
@@ -44,53 +44,6 @@ const NavigationList = styled.div`
     height: 0;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-`;
-
-const NavigationLink = styled.a`
-  display: block;
-  font-family: ${variables.font};
-  font-size: 0.9em;
-  font-weight: 400;
-  color: ${variables.firstColors.primarycolor};
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0 10px;
-  padding: 5px 15px;
-  border: 1px solid ${variables.bgcolor};
-  border-radius: 7px;
-  box-sizing: border-box;
-
-  :hover, :active {
-    border: 1px solid ${variables.firstColors.primarycolor};
-    background-color: ${variables.firstColors.primarycolor};
-    color: #ffffff;
-  }
-
-  @media ${device.pad} {
-    width: 47%;
-    line-height: 30px;
-    border: 1px solid ${variables.firstColors.primarycolor};
-    margin-bottom: 10px;
-  }
-
-  @media ${device.mobile} {
-    width: 100%;
-    line-height: 30px;
-    color: #FFFFFF;
-    margin: 0;
-    border: none;
-    border-bottom: 1px solid #FFFFFF;
-    border-radius: 0;
-
-    :last-child {
-      border-bottom: none;
-    }
-
-    :hover, :active {
-      border-bottom: 1px solid #FFFFFF;
-    }
   }
 `;
 
@@ -156,11 +109,11 @@ class Navigation extends React.Component {
     return (
       <NavigationDiv>
         <NavigationList className={this.state.class}>
-          <NavigationLink href="/">О компании</NavigationLink>
-          <NavigationLink href="/">Лицензии</NavigationLink>
-          <NavigationLink href="/">Заказчики</NavigationLink>
-          <NavigationLink href="/">Благодарственные письма</NavigationLink>
-          <NavigationLink href="/">Контакты</NavigationLink>
+          <Link to="/" className="navigationLink">О компании</Link>
+          <Link to="/licenses" className="navigationLink">Лицензии</Link>
+          <Link to="/orders" className="navigationLink">Заказчики</Link>
+          <Link to="/letters" className="navigationLink">Благодарственные письма</Link>
+          <Link to="/contacts" className="navigationLink">Контакты</Link>
         </NavigationList>
         <NavigationMobileWrap>
           <NavigationMobileLink onClick={this.press} href="#">Меню сайта</NavigationMobileLink>
