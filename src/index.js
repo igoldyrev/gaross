@@ -5,7 +5,7 @@ import './components/Body';
 import HeaderWrap from './components/headerWrap/HeaderWrap';
 import Footer from './components/footer/footer';
 import Main from './components/Main/Main';
-import Licenses from "./components/Licenses/Licenses";
+import Licenses from './components/Licenses/Licenses';
 
 render(
   <Router>
