@@ -12,8 +12,9 @@ module.exports = {
   ],
   output:
   {
-      path: path.resolve(__dirname, 'dist'),
-      filename: './build/gaross.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: './build/gaross.js',
+    publicPath: '/'
   },
   optimization: {
     minimizer: [
