@@ -52,4 +52,4 @@ class IndexWork extends React.Component {
   }
 }
 
-export  default IndexWork;
+export default IndexWork;

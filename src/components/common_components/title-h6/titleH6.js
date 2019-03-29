@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { device, variables } from '../../variables';
-import PropTypes from "prop-types";
 
 const TitleH6 = styled.h6`
   font-family: ${variables.fontTitle};

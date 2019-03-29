@@ -30,7 +30,7 @@ const FooterUl = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: ${props => props.left ? "left" : "right"};
+  text-align: ${props => (props.left ? 'left' : 'right')};
 `;
 
 const FooterLi = styled.li`

@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from '../variables';
 import { variables } from '../variables';
-import Header from './../header/Header';
-import Navigation from './../navigation/Navigation';
+import Header from '../header/Header';
+import Navigation from '../navigation/Navigation';
 
 const HeaderWrapElement = <Header />;
 const NavigationElement = <Navigation />;

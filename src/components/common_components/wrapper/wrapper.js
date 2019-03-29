@@ -23,7 +23,7 @@ const WrapperDiv = styled.div`
   }
 `;
 
-function Wrapper (props) {
+function Wrapper(props) {
   return (
     <WrapperDiv>
       {props.children}

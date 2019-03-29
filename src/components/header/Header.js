@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './logo.svg';
-import { device } from './../variables';
+import { device } from '../variables';
 
 const HeaderDiv = styled.header`
   width: 100%;

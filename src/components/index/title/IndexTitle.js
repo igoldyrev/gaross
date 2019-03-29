@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { device, variables } from '../../variables';
-import PropTypes from "prop-types";
 
 const IndexTitleH1 = styled.h1`
   font-family: ${variables.fontTitle};
@@ -31,4 +31,4 @@ function IndexTitle({ text }) {
 
 IndexTitle.propTypes = propTypes;
 
-export  default IndexTitle;
+export default IndexTitle;

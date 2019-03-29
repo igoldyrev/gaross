@@ -142,13 +142,14 @@ const NavigationMobileLink = styled.a`
 class Navigation extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {class: ""};
+    this.state = { class: '' };
 
     this.press = this.press.bind(this);
   }
-  press(){
-    let className = (this.state.class==="navigationMobile__active")?"":"navigationMobile__active";
-    this.setState({class: className});
+
+  press() {
+    const className = (this.state.class === 'navigationMobile__active') ? '' : 'navigationMobile__active';
+    this.setState({ class: className });
   }
 
   render() {
