@@ -17,6 +17,11 @@ export const variables = {
     titlegray: '#666', // Цвет для заголовков страниц
     textgray: '#333', // Цвет ля текста и вторичных заголовков
   },
+  fontSizes: {
+    desktop: '1em',
+    pad: '0.9em',
+    mobile: '0.8em',
+  },
   bgcolor: '#edeef0', // Фон на сайте
   borderColor: '#d9d9d9', // цвет границ
   font: '"Roboto", Tahoma, sans-serif;',

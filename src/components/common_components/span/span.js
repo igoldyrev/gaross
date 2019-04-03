@@ -5,17 +5,17 @@ import { device, variables } from '../../variables';
 
 const TextSpan = styled.span`
   font-family: ${variables.font};
-  font-size: 1em;
+  font-size: ${variables.fontSizes.desktop};
   font-weight: inherit;
   line-height: inherit;
   color: ${variables.secondaryColors.textgray};
 
   @media ${device.pad} {
-    font-size: 0.9em;
+    font-size: ${variables.fontSizes.pad};
   }
 
   @media ${device.mobile} {
-    font-size: 0.8em;
+    font-size: ${variables.fontSizes.mobile};
     line-height: 20px;
   }
 `;
