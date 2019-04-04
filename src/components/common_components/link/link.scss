@@ -1,0 +1,35 @@
+.link {
+  font-family: $font;
+  font-size: 1em;
+  font-weight: inherit;
+  line-height: inherit;
+  color: $textgray;
+  text-decoration: none;
+  box-shadow: inset 0 -1px $primarycolor;
+  cursor: pointer;
+
+  &:hover {
+    color: $primarycolor;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:visited {
+    color: $textgray;
+  }
+
+  &:active {
+    color: $textgray;
+  }
+}
+
+@include adaptive(pad) {
+  .link {
+    font-size: 0.9em;
+  }
+}
+
+@include adaptive(mobile) {
+  .link {
+    font-size: 0.8em;
+  }
+}
