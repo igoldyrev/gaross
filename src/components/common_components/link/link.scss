@@ -12,14 +12,6 @@
     color: $primarycolor;
     transition: 0.3s ease-in-out;
   }
-
-  &:visited {
-    color: $textgray;
-  }
-
-  &:active {
-    color: $textgray;
-  }
 }
 
 @include adaptive(pad) {
