@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { device, variables } from '../../variables';
 
 const WrapperDiv = styled.div`
@@ -23,12 +24,22 @@ const WrapperDiv = styled.div`
   }
 `;
 
-function Wrapper(props) {
-  return (
-    <WrapperDiv>
-      {props.children}
-    </WrapperDiv>
-  );
+const propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+class Wrapper extends React.Component {
+  render() {
+    const { children } = this.props;
+
+    return (
+      <WrapperDiv>
+        { children }
+      </WrapperDiv>
+    );
+  }
 }
+
+Wrapper.propTypes = propTypes;
 
 export default Wrapper;
