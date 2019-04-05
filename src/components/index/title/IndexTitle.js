@@ -25,7 +25,9 @@ const propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-function IndexTitle({ text }) {
+function IndexTitle(props) {
+  const { text } = props;
+
   return <IndexTitleH1>{text}</IndexTitleH1>;
 }
 

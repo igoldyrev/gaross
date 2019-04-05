@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { device, variables } from '../../variables';
 
 const IndexWorkDiv = styled.div`
@@ -41,15 +42,25 @@ const IndexImage = styled.img`
   }
 `;
 
-class IndexWork extends React.Component {
-  render() {
-    return (
-      <IndexWorkDiv>
-        <IndexImage src={this.props.src} alt={this.props.alt} />
-        <IndexNameH2>{this.props.text}</IndexNameH2>
-      </IndexWorkDiv>
-    );
-  }
+const propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
+
+function IndexWork(props) {
+  const { src } = props;
+  const { alt } = props;
+  const { text } = props;
+
+  return (
+    <IndexWorkDiv>
+      <IndexImage src={src} alt={alt} />
+      <IndexNameH2>{text}</IndexNameH2>
+    </IndexWorkDiv>
+  );
 }
+
+IndexWork.propTypes = propTypes;
 
 export default IndexWork;

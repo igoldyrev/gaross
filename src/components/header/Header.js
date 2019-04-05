@@ -51,20 +51,18 @@ const HeaderSvg = styled.div`
   }
 `;
 
-class Header extends React.Component {
-  render() {
-    return (
-      <HeaderDiv>
-        <HeaderWrap>
-          <HeaderSvg>
-            <Link to="/">
-              <Logo />
-            </Link>
-          </HeaderSvg>
-        </HeaderWrap>
-      </HeaderDiv>
-    );
-  }
+function Header() {
+  return (
+    <HeaderDiv>
+      <HeaderWrap>
+        <HeaderSvg>
+          <Link to="/">
+            <Logo />
+          </Link>
+        </HeaderSvg>
+      </HeaderWrap>
+    </HeaderDiv>
+  );
 }
 
 export default Header;
