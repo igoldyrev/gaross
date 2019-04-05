@@ -28,13 +28,33 @@ const TextBlock = styled.p`
 `;
 
 const propTypes = {
-  text: PropTypes.string.isRequired,
+  firstText: PropTypes.string.isRequired,
+  secondText: PropTypes.string,
+  children: PropTypes.element,
 };
 
-function Text({ text }) {
-  return <TextBlock>{text}</TextBlock>;
+const defaultProps = {
+  secondText: '',
+  children: null,
+};
+
+class Text extends React.Component {
+  render() {
+    const { firstText } = this.props;
+    const { secondText } = this.props;
+    const { children } = this.props;
+
+    return (
+      <TextBlock>
+        { firstText }
+        { children }
+        { secondText }
+      </TextBlock>
+    );
+  }
 }
 
 Text.propTypes = propTypes;
+Text.defaultProps = defaultProps;
 
 export default Text;
