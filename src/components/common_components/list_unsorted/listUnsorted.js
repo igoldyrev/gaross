@@ -32,19 +32,17 @@ const UnList = styled.ul`
 `;
 
 const propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
-class UnsortedList extends React.Component {
-  render() {
-    const { children } = this.props;
+function UnsortedList(props) {
+  const { children } = props;
 
-    return (
-      <UnList>
-        { children }
-      </UnList>
-    );
-  }
+  return (
+    <UnList>
+      {children}
+    </UnList>
+  );
 }
 
 UnsortedList.propTypes = propTypes;

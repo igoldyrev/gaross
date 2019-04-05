@@ -23,19 +23,17 @@ const DList = styled.ol`
 `;
 
 const propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
-class DecimalList extends React.Component {
-  render() {
-    const { children } = this.props;
+function DecimalList(props) {
+  const { children } = props;
 
-    return (
-      <DList>
-        { children }
-      </DList>
-    );
-  }
+  return (
+    <DList>
+      {children}
+    </DList>
+  );
 }
 
 DecimalList.propTypes = propTypes;

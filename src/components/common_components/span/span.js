@@ -24,7 +24,9 @@ const propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-function Span({ text }) {
+function Span(props) {
+  const { text } = props;
+
   return <TextSpan>{text}</TextSpan>;
 }
 

@@ -27,7 +27,9 @@ const propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-function H5Title({ text }) {
+function H5Title(props) {
+  const { text } = props;
+
   return <TitleH5>{text}</TitleH5>;
 }
 

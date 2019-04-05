@@ -5,7 +5,9 @@ const propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-function ListItem({ text }) {
+function ListItem(props) {
+  const { text } = props;
+
   return <li>{text}</li>;
 }
 

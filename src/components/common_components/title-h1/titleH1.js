@@ -30,7 +30,9 @@ const propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-function H1Title({ text }) {
+function H1Title(props) {
+  const { text } = props;
+
   return <TitleH1>{text}</TitleH1>;
 }
 

@@ -27,7 +27,9 @@ const propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-function H6Title({ text }) {
+function H6Title(props) {
+  const { text } = props;
+
   return <TitleH6>{text}</TitleH6>;
 }
 

@@ -25,19 +25,17 @@ const WrapperDiv = styled.div`
 `;
 
 const propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
-class Wrapper extends React.Component {
-  render() {
-    const { children } = this.props;
+function Wrapper(props) {
+  const { children } = props;
 
-    return (
-      <WrapperDiv>
-        { children }
-      </WrapperDiv>
-    );
-  }
+  return (
+    <WrapperDiv>
+      {children}
+    </WrapperDiv>
+  );
 }
 
 Wrapper.propTypes = propTypes;

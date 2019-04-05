@@ -38,20 +38,18 @@ const defaultProps = {
   children: null,
 };
 
-class Text extends React.Component {
-  render() {
-    const { firstText } = this.props;
-    const { secondText } = this.props;
-    const { children } = this.props;
+function Text(props) {
+  const { firstText } = props;
+  const { secondText } = props;
+  const { children } = props;
 
-    return (
-      <TextBlock>
-        { firstText }
-        { children }
-        { secondText }
-      </TextBlock>
-    );
-  }
+  return (
+    <TextBlock>
+      { firstText }
+      { children }
+      { secondText }
+    </TextBlock>
+  );
 }
 
 Text.propTypes = propTypes;
