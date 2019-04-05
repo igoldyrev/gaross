@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { device, variables } from '../../variables';
 
 const DList = styled.ol`
@@ -21,12 +22,22 @@ const DList = styled.ol`
   }
 `;
 
-function DecimalList(props) {
-  return (
-    <DList>
-      {props.children}
-    </DList>
-  );
+const propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+class DecimalList extends React.Component {
+  render() {
+    const { children } = this.props;
+
+    return (
+      <DList>
+        { children }
+      </DList>
+    );
+  }
 }
+
+DecimalList.propTypes = propTypes;
 
 export default DecimalList;

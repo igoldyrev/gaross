@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import { device, variables } from '../../variables';
 
 const UnList = styled.ul`
@@ -30,12 +31,22 @@ const UnList = styled.ul`
   }
 `;
 
-function UnsortedList(props) {
-  return (
-    <UnList>
-      {props.children}
-    </UnList>
-  );
+const propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+class UnsortedList extends React.Component {
+  render() {
+    const { children } = this.props;
+
+    return (
+      <UnList>
+        { children }
+      </UnList>
+    );
+  }
 }
+
+UnsortedList.propTypes = propTypes;
 
 export default UnsortedList;
