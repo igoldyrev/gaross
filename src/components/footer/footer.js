@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { device } from '../variables';
-import { variables } from '../variables';
+import { device, variables } from '../variables';
 
 const FooterDiv = styled.footer`
   display: flex;
@@ -35,30 +35,34 @@ const FooterUl = styled.ul`
 
 const FooterLi = styled.li`
   font-family: ${variables.font};
-  font-size: 1em;
+  font-size: ${variables.fontSizes.desktop};
   font-weight: inherit;
   color: #FFFFFF;
   padding: 5px 0;
+  
+  @media ${device.pad} {
+    font-size: ${variables.fontSizes.pad};
+  }
 
   @media ${device.mobile} {
     text-align: center;
-    font-size: 0.8em;
+    font-size: ${variables.fontSizes.mobile};
   }
 `;
 
 const FooterLink = styled.a`
   font-family: inherit;
-  font-size: inherit;
+  font-size: ${variables.fontSizes.desktop};
   font-weight: inherit;
   color: #ffffff;
   text-decoration: none;
 
   @media ${device.pad} {
-    font-size: 0.9em;
+    font-size: ${variables.fontSizes.pad};
   }
 
   @media ${device.mobile} {
-    font-size: 0.8  em;
+    font-size: ${variables.fontSizes.mobile};
   }
 
   :hover {
@@ -66,29 +70,27 @@ const FooterLink = styled.a`
   }
 `;
 
-class Footer extends React.Component {
-  render() {
-    return (
-      <FooterDiv>
-        <FooterUl left>
-          <FooterLi>
-            <FooterLink href="/" target="parent">© 2010 ООО Гаросс</FooterLink>
-          </FooterLi>
-          <FooterLi>
-            <FooterLink href="/siemap" target="parent">Карта сайта</FooterLink>
-          </FooterLi>
-        </FooterUl>
-        <FooterUl>
-          <FooterLi>
-            г.Пермь, ул. Дзержинского 15, офис 10
-          </FooterLi>
-          <FooterLi>
-            <FooterLink href="tel:+73422371597">Телефон/факс +7 (342) 237 15 97</FooterLink>
-          </FooterLi>
-        </FooterUl>
-      </FooterDiv>
-    );
-  }
+function Footer() {
+  return (
+    <FooterDiv>
+      <FooterUl left>
+        <FooterLi>
+          <Link to="/" className="footer__link">© 2010 ООО Гаросс</Link>
+        </FooterLi>
+        <FooterLi>
+          <Link to="/siemap" className="footer__link">Карта сайта</Link>
+        </FooterLi>
+      </FooterUl>
+      <FooterUl>
+        <FooterLi>
+          г.Пермь, ул. Дзержинского 15, офис 10
+        </FooterLi>
+        <FooterLi>
+          <FooterLink href="tel:+73422371597">Телефон/факс +7 (342) 237 15 97</FooterLink>
+        </FooterLi>
+      </FooterUl>
+    </FooterDiv>
+  );
 }
 
 export default Footer;
