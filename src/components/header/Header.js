@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from './logo.svg';
 import { device } from '../variables';
@@ -56,9 +57,9 @@ class Header extends React.Component {
       <HeaderDiv>
         <HeaderWrap>
           <HeaderSvg>
-            <a href="/">
+            <Link to="/">
               <Logo />
-            </a>
+            </Link>
           </HeaderSvg>
         </HeaderWrap>
       </HeaderDiv>
