@@ -69,6 +69,14 @@ module.exports = {
         to: './img/index',
       },
       {
+        from: './src/components/licenses/img',
+        to: './img/licenses',
+      },
+      {
+        from: './src/fa',
+        to: './fa',
+      },
+      {
         from: './public',
         to: './',
       },
