@@ -18,9 +18,13 @@ const LicenseDiv = styled.div`
 
 const propTypes = {
   LicenseName: PropTypes.string.isRequired,
-  LicenseDescription: PropTypes.string.isRequired,
+  LicenseDescription: PropTypes.string,
   LicenseImgLink: PropTypes.string.isRequired,
   LicensePdfLink: PropTypes.string.isRequired,
+};
+
+const defaultProps = {
+  LicenseDescription: '',
 };
 
 function License(props) {
@@ -44,5 +48,6 @@ function License(props) {
 }
 
 License.propTypes = propTypes;
+License.defaultProps = defaultProps;
 
 export default License;
