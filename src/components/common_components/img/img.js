@@ -19,12 +19,19 @@ const defaultProps = {
   imgHeight: 'auto',
 };
 
+function imgClick() {
+  const imgPopup = document.querySelector('.imgPopup');
+  document.body.classList.add('imgPopup__modal-open');
+  imgPopup.classList.remove('imgPopup__unactive');
+  imgPopup.classList.add('imgPopup__active');
+}
+
 function Img(props) {
   const { imgSrc } = props;
   const { imgAlt } = props;
   const { imgWidth } = props;
   const { imgHeight } = props;
-  return <ImgElement src={imgSrc} alt={imgAlt} width={imgWidth} height={imgHeight} />;
+  return <ImgElement onClick={imgClick} src={imgSrc} alt={imgAlt} width={imgWidth} height={imgHeight} />;
 }
 
 Img.propTypes = propTypes;
