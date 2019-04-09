@@ -6,6 +6,7 @@ import HeaderWrap from './components/headerWrap/HeaderWrap';
 import Footer from './components/footer/footer';
 import Main from './components/Main/Main';
 import Licenses from './components/Licenses/Licenses';
+import ImgPopup from './components/common_components/img_popup/imgPopup';
 
 render(
   <Router>
@@ -15,6 +16,7 @@ render(
       <Route path="/licenses" component={Licenses} />
     </Switch>
     <Route component={Footer} />
+    <Route component={ImgPopup} />
   </Router>,
   document.getElementById('root'),
 );
