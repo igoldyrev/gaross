@@ -7,6 +7,7 @@ import Footer from './components/footer/footer';
 import Main from './components/Main/Main';
 import Licenses from './components/Licenses/Licenses';
 import ImgPopup from './components/common_components/img_popup/imgPopup';
+import Orders from './components/Orders/Orders';
 
 render(
   <Router>
@@ -14,6 +15,7 @@ render(
     <Switch>
       <Route exact path="/" component={Main} />
       <Route path="/licenses" component={Licenses} />
+      <Route path="/orders" component={Orders} />
     </Switch>
     <Route component={Footer} />
     <Route component={ImgPopup} />

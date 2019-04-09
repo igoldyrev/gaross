@@ -73,6 +73,10 @@ module.exports = {
         to: './img/licenses',
       },
       {
+        from: './src/components/Orders/img',
+        to: './img/orders',
+      },
+      {
         from: './src/components/common_components/img_popup/img',
         to: './img/popup',
       },
