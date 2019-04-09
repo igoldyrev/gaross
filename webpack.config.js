@@ -73,6 +73,10 @@ module.exports = {
         to: './img/licenses',
       },
       {
+        from: './src/components/common_components/img_popup/img',
+        to: './img/popup',
+      },
+      {
         from: './src/fa',
         to: './fa',
       },
@@ -86,4 +90,7 @@ module.exports = {
       },
     ]),
   ],
+  devServer: {
+    port: 8080,
+  },
 };
