@@ -10,14 +10,24 @@ const ImgElement = styled.img`
 const propTypes = {
   imgSrc: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,
+  imgWidth: PropTypes.string,
+  imgHeight: PropTypes.string,
+};
+
+const defaultProps = {
+  imgWidth: '100%',
+  imgHeight: 'auto',
 };
 
 function Img(props) {
   const { imgSrc } = props;
   const { imgAlt } = props;
-  return <ImgElement src={imgSrc} alt={imgAlt} />;
+  const { imgWidth } = props;
+  const { imgHeight } = props;
+  return <ImgElement src={imgSrc} alt={imgAlt} width={imgWidth} height={imgHeight} />;
 }
 
 Img.propTypes = propTypes;
+Img.defaultProps = defaultProps;
 
 export default Img;

@@ -37,7 +37,7 @@ function License(props) {
       <H2Title text={LicenseName} />
       <Text firstText={LicenseDescription} />
       <ImgWrap>
-        <Img imgSrc={LicenseImgLink} imgAlt={LicenseName} className="licenses__img" />
+        <Img imgSrc={LicenseImgLink} imgAlt={LicenseName} imgWidth="150px" />
       </ImgWrap>
       <LinkInner>
         <i className="fa fa-file-pdf-o licenses__icon" />
