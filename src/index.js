@@ -9,6 +9,7 @@ import Licenses from './components/Licenses/Licenses';
 import ImgPopup from './components/common_components/img_popup/imgPopup';
 import Orders from './components/Orders/Orders';
 import Letters from './components/Letters/Letters';
+import Contacts from './components/Contacts/Contacts';
 
 render(
   <Router>
@@ -18,6 +19,7 @@ render(
       <Route path="/licenses" component={Licenses} />
       <Route path="/orders" component={Orders} />
       <Route path="/letters" component={Letters} />
+      <Route path="/contacts" component={Contacts} />
     </Switch>
     <Route component={Footer} />
     <Route component={ImgPopup} />
