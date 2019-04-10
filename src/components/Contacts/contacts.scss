@@ -11,19 +11,24 @@
     line-height: 2;
   }
 
-  @include adaptive(pad) {
-    .contacts {
-      &__link {
-        font-size: 0.9em;
-      }
+  &__map {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@include adaptive(pad) {
+  .contacts {
+    &__link {
+      font-size: 0.9em;
     }
   }
+}
 
-  @include adaptive(mobile) {
-    .contacts {
-      &__link {
-        font-size: 0.8em;
-      }
+@include adaptive(mobile) {
+  .contacts {
+    &__link {
+      font-size: 0.8em;
     }
   }
 }

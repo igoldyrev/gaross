@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import {
+  YMaps, Map, GeoObject,
+} from 'react-yandex-maps';
 import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
 import Text from '../common_components/text/text';
@@ -8,6 +11,12 @@ import H2Title from '../common_components/title-h2/titleH2';
 const ContactsInner = styled.div`
   margin-bottom: 15px;
 `;
+
+const mapState = { center: [58.008157, 56.173439], zoom: 16 };
+const mapPoints = {
+  office: [58.009134, 56.184986],
+  proizvBaza: [58.007127, 56.164639],
+};
 
 function Contacts() {
   return (
@@ -21,7 +30,34 @@ function Contacts() {
         <a href="mailto:info@gaross59.ru" className="link contacts__link">Электронная почта: info@gaross59.ru</a>
       </ContactsInner>
       <H2Title text="Наше местоположение" />
-      todo: Yandex maps;
+      <YMaps>
+        <Map defaultState={mapState} className="contacts__map">
+          <GeoObject
+            geometry={{
+              type: 'Point',
+              coordinates: mapPoints.office,
+            }}
+            properties={{
+              iconContent: 'Офис',
+            }}
+            options={{
+              preset: 'islands#blueStretchyIcon',
+            }}
+          />
+          <GeoObject
+            geometry={{
+              type: 'Point',
+              coordinates: mapPoints.proizvBaza,
+            }}
+            properties={{
+              iconContent: 'Производственная база',
+            }}
+            options={{
+              preset: 'islands#blueStretchyIcon',
+            }}
+          />
+        </Map>
+      </YMaps>
       todo: Форма обратной связи
       <H2Title text="Реквизиты:" />
       <Text firstText="ИНН 5903099470 КПП 590301001" />
