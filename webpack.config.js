@@ -77,6 +77,10 @@ module.exports = {
         to: './img/orders',
       },
       {
+        from: './src/components/Letters/img',
+        to: './img/letters',
+      },
+      {
         from: './src/components/common_components/img_popup/img',
         to: './img/popup',
       },
