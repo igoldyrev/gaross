@@ -1,0 +1,29 @@
+.contacts {
+  &__link {
+    display: block;
+    float: left;
+    clear: both;
+
+    font-family: $font;
+    font-size: 1em;
+    font-weight: 400;
+    color: $textgray;
+    line-height: 2;
+  }
+
+  @include adaptive(pad) {
+    .contacts {
+      &__link {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  @include adaptive(mobile) {
+    .contacts {
+      &__link {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
