@@ -14,7 +14,6 @@ module.exports = {
   {
     path: path.resolve(__dirname, 'dist'),
     filename: './build/gaross.js',
-    publicPath: '/',
   },
   optimization: {
     minimizer: [
@@ -100,5 +99,6 @@ module.exports = {
   ],
   devServer: {
     port: 8080,
+    historyApiFallback: true,
   },
 };
