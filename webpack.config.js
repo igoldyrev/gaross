@@ -80,7 +80,7 @@ module.exports = {
         to: './img/letters',
       },
       {
-        from: './src/components/common_components/img_popup/img',
+        from: './src/components/common_components/modal/img',
         to: './img/popup',
       },
       {
