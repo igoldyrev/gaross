@@ -21,6 +21,9 @@ const defaultProps = {
 };
 
 function imgClick() {
+  const imgMini = document.querySelectorAll('.imgMini');
+  const getArrayImageSrc = [].map.call(imgMini, it => it.src);
+
   const modal = document.querySelector('.modal');
   document.body.classList.add('modal__modal-open');
   modal.classList.remove('modal__unactive');
@@ -35,6 +38,7 @@ function Img(props) {
   return (
     <Fragment>
       <ImgElement
+        className="imgMini"
         onClick={imgClick}
         src={imgSrc}
         alt={imgAlt}
