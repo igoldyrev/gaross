@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Modal from '../modal/modal';
 
 const ImgElement = styled.img`
   margin: 0 5px 15px;
@@ -20,10 +21,10 @@ const defaultProps = {
 };
 
 function imgClick() {
-  const imgPopup = document.querySelector('.imgPopup');
-  document.body.classList.add('imgPopup__modal-open');
-  imgPopup.classList.remove('imgPopup__unactive');
-  imgPopup.classList.add('imgPopup__active');
+  const modal = document.querySelector('.modal');
+  document.body.classList.add('modal__modal-open');
+  modal.classList.remove('modal__unactive');
+  modal.classList.add('modal__active');
 }
 
 function Img(props) {
@@ -31,7 +32,18 @@ function Img(props) {
   const { imgAlt } = props;
   const { imgWidth } = props;
   const { imgHeight } = props;
-  return <ImgElement onClick={imgClick} src={imgSrc} alt={imgAlt} width={imgWidth} height={imgHeight} />;
+  return (
+    <Fragment>
+      <ImgElement
+        onClick={imgClick}
+        src={imgSrc}
+        alt={imgAlt}
+        width={imgWidth}
+        height={imgHeight}
+      />
+      <Modal imgSrc={imgSrc} modalActiveClass="modal modal__active" />
+    </Fragment>
+  );
 }
 
 Img.propTypes = propTypes;
