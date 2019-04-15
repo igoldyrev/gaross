@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { variables, device } from '../variables';
+import Modal from '../common_components/modal/modal';
 
 const LetterElement = styled.a`
   display: block;
@@ -45,15 +46,36 @@ const propTypes = {
   LetterDescription: PropTypes.string.isRequired,
 };
 
-function Letter(props) {
-  const { LetterImgSrc } = props;
-  const { LetterDescription } = props;
-  return (
-    <LetterElement href={LetterImgSrc}>
-      <LetterIcon className="fa fa-file-text-o" />
-      {LetterDescription}
-    </LetterElement>
-  );
+class Letter extends Component {
+  state = {
+    isOpen: false,
+  };
+
+  letterClose = () => {
+    this.setState({ isOpen: false });
+    document.body.classList.remove('modal__modal-open');
+  };
+
+  letterOpen = (e) => {
+    e.preventDefault();
+    this.setState({ isOpen: true });
+    document.body.classList.add('modal__modal-open');
+  };
+
+  render() {
+    const { LetterImgSrc } = this.props;
+    const { LetterDescription } = this.props;
+    const { isOpen } = this.state;
+    return (
+      <Fragment>
+        <LetterElement href={LetterImgSrc} onClick={this.letterOpen}>
+          <LetterIcon className="fa fa-file-text-o" />
+          {LetterDescription}
+        </LetterElement>
+        <Modal isOpen={isOpen} onClose={this.letterClose} imgSrc={LetterImgSrc} />
+      </Fragment>
+    );
+  }
 }
 
 Letter.propTypes = propTypes;
