@@ -26,6 +26,15 @@ export const variables = {
   borderColor: '#d9d9d9', // цвет границ
   font: '"Roboto", Tahoma, sans-serif;',
   fontTitle: '"Roboto Slab", Tahoma, serif;',
+  title: 'ООО Гаросс - Комплексные решения в области строительства - ',
+};
+
+export const titles = {
+  main: `${variables.title}О компании`,
+  licenses: `${variables.title}Лицензии`,
+  orders: `${variables.title}Заказчики`,
+  letters: `${variables.title}Благодарственные письма`,
+  contacts: `${variables.title}Контакты`,
 };
 
 export const device = {
