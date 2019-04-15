@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Modal from '../modal/modal';
@@ -20,34 +20,40 @@ const defaultProps = {
   imgHeight: 'auto',
 };
 
-function imgClick() {
-  const imgMini = document.querySelectorAll('.imgMini');
-  const getArrayImageSrc = [].map.call(imgMini, it => it.src);
+class Img extends Component {
+  state = {
+    isOpen: false,
+  };
 
-  const modal = document.querySelector('.modal');
-  document.body.classList.add('modal__modal-open');
-  modal.classList.remove('modal__unactive');
-  modal.classList.add('modal__active');
-}
+  imgClose = () => {
+    this.setState({ isOpen: false });
+    document.body.classList.remove('modal__modal-open');
+  };
 
-function Img(props) {
-  const { imgSrc } = props;
-  const { imgAlt } = props;
-  const { imgWidth } = props;
-  const { imgHeight } = props;
-  return (
-    <Fragment>
-      <ImgElement
-        className="imgMini"
-        onClick={imgClick}
-        src={imgSrc}
-        alt={imgAlt}
-        width={imgWidth}
-        height={imgHeight}
-      />
-      <Modal imgSrc={imgSrc} modalActiveClass="modal modal__active" />
-    </Fragment>
-  );
+  imgOpen = () => {
+    this.setState({ isOpen: true });
+    document.body.classList.add('modal__modal-open');
+  };
+
+  render() {
+    const { imgSrc } = this.props;
+    const { imgAlt } = this.props;
+    const { imgWidth } = this.props;
+    const { imgHeight } = this.props;
+    const { isOpen } = this.state;
+    return (
+      <Fragment>
+        <ImgElement
+          onClick={this.imgOpen}
+          src={imgSrc}
+          alt={imgAlt}
+          width={imgWidth}
+          height={imgHeight}
+        />
+        <Modal imgSrc={imgSrc} isOpen={isOpen} onClose={this.imgClose} />
+      </Fragment>
+    );
+  }
 }
 
 Img.propTypes = propTypes;

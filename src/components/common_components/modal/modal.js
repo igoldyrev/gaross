@@ -35,24 +35,26 @@ const ModalImgCloseButton = styled.div`
 `;
 
 const propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
   imgSrc: PropTypes.string.isRequired,
 };
 
-function modalCloseButtonClick() {
-  const modal = document.querySelector('.modal');
-  document.body.classList.remove('modal__modal-open');
-  modal.classList.remove('modal__active');
-  modal.classList.add('modal__unactive');
-}
-
 function Modal(props) {
   const { imgSrc } = props;
+  const { isOpen } = props;
+  const { onClose } = props;
   return (
     <ModalWrap>
-      <div className="modal__overlay">
-        <ModalImg src={imgSrc} />
-        <ModalImgCloseButton onClick={modalCloseButtonClick} />
-      </div>
+      {
+        isOpen
+        && (
+        <div className="modal__overlay">
+          <ModalImg src={imgSrc} />
+          <ModalImgCloseButton onClick={onClose} />
+        </div>
+        )
+      }
     </ModalWrap>
   );
 }
