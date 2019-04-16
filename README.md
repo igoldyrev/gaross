@@ -8,14 +8,14 @@ npm install
 ```
 ## Обновление
 ```
-npm update --save-dev
+npm update --save/--save-dev
 ```
 ## Сборка
 ### Сборка develop
 ```
-npm run dev
+npm run build
 ```
-### Тест ESlint для JS
+### ESlint тест для приложения
 ```
 npm run eslint
 ```
