@@ -78,7 +78,7 @@ function Footer() {
           <Link to="/" className="footer__link">© 2010 ООО Гаросс</Link>
         </FooterLi>
         <FooterLi>
-          <Link to="/siemap" className="footer__link">Карта сайта</Link>
+          <Link to="/sitemap" className="footer__link">Карта сайта</Link>
         </FooterLi>
       </FooterUl>
       <FooterUl>

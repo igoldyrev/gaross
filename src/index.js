@@ -7,6 +7,7 @@ import Licenses from './components/Licenses/Licenses';
 import Orders from './components/Orders/Orders';
 import Letters from './components/Letters/Letters';
 import Contacts from './components/Contacts/Contacts';
+import Sitemap from './components/Sitemap/Sitemap';
 
 
 ReactDOM.render((
@@ -18,6 +19,7 @@ ReactDOM.render((
         <Route path="/orders" component={Orders} />
         <Route path="/letters" component={Letters} />
         <Route path="/contacts" component={Contacts} />
+        <Route path="/sitemap" component={Sitemap} />
       </Switch>
     </App>
   </Router>

@@ -35,6 +35,7 @@ export const titles = {
   orders: `${variables.title}Заказчики`,
   letters: `${variables.title}Благодарственные письма`,
   contacts: `${variables.title}Контакты`,
+  sitemap: `${variables.title}Карта сайта`,
 };
 
 export const device = {
