@@ -1,0 +1,29 @@
+.footer {
+  &__link {
+    font-family: $font;
+    font-size: 1em;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include adaptive(pad) {
+  .footer {
+    &__link {
+      font-size: 0.9em;
+    }
+  }
+}
+
+@include adaptive(mobile) {
+  .footer {
+    &__link {
+      font-size: 0.8em;
+    }
+  }
+}

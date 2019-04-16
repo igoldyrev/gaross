@@ -1,0 +1,13 @@
+.licenses {
+  &__icon {
+    font-size: 1.3em;
+    margin-right: 10px;
+    color: $redcolor;
+  }
+}
+
+@include adaptive(mobile) {
+  .licenses__icon {
+    font-size: 1em;
+  }
+}
