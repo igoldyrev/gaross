@@ -12,6 +12,10 @@ class Main extends Component {
     document.title = `${titles.main}`;
   }
 
+  componentWillUnmount() {
+    document.title = '';
+  }
+
   render() {
     return (
       <Wrapper>

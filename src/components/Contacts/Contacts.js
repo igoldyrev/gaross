@@ -24,6 +24,10 @@ class Contacts extends Component {
     document.title = `${titles.contacts}`;
   }
 
+  componentWillUnmount() {
+    document.title = '';
+  }
+
   render() {
     return (
       <Wrapper>
@@ -64,7 +68,6 @@ class Contacts extends Component {
             />
           </Map>
         </YMaps>
-        todo: Форма обратной связи
         <H2Title text="Реквизиты:" />
         <Text firstText="ИНН 5903099470 КПП 590301001" />
         <Text

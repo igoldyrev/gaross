@@ -9,6 +9,10 @@ class Licenses extends Component {
     document.title = `${titles.licenses}`;
   }
 
+  componentWillUnmount() {
+    document.title = '';
+  }
+
   render() {
     return (
       <Wrapper>

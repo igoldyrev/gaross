@@ -17,6 +17,10 @@ class Orders extends Component {
     document.title = `${titles.orders}`;
   }
 
+  componentWillUnmount() {
+    document.title = '';
+  }
+
   render() {
     return (
       <Wrapper>

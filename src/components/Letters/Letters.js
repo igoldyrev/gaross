@@ -24,6 +24,10 @@ class Letters extends Component {
     document.title = `${titles.letters}`;
   }
 
+  componentWillUnmount() {
+    document.title = '';
+  }
+
   render() {
     return (
       <Wrapper>
