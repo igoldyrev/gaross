@@ -93,18 +93,15 @@ const NavigationMobileLink = styled.a`
 `;
 
 class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeClass: '' };
+  state = {
+    activeClass: '',
+  };
 
-    this.press = this.press.bind(this);
-  }
-
-  press() {
+  press = () => {
     const { activeClass } = this.state;
     const className = (activeClass === 'navigationMobile__active') ? '' : 'navigationMobile__active';
     this.setState({ activeClass: className });
-  }
+  };
 
   render() {
     const { activeClass } = this.state;
