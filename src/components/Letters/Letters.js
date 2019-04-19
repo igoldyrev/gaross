@@ -5,6 +5,7 @@ import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
 import H4Title from '../common_components/title-h4/titleH4';
 import Letter from './Letter';
+import MetaTags from "react-meta-tags";
 
 const LetterWrap = styled.div`
   padding: 10px;
@@ -31,6 +32,9 @@ class Letters extends Component {
   render() {
     return (
       <Wrapper>
+        <MetaTags>
+          <meta name="description" content="Общество с ограниченной ответственностью Гаросс - благодарственные письма" />
+        </MetaTags>
         <H1Title text="Благодарственные письма" />
         <LetterWrap className="clearfix">
           <H4Title text="ФКГУ Комбинат 'Алый Стяг'" />

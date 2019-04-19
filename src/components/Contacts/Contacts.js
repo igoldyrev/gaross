@@ -8,6 +8,7 @@ import H1Title from '../common_components/title-h1/titleH1';
 import Text from '../common_components/text/text';
 import H2Title from '../common_components/title-h2/titleH2';
 import { titles } from '../variables';
+import MetaTags from "react-meta-tags";
 
 const ContactsInner = styled.div`
   margin-bottom: 15px;
@@ -31,6 +32,9 @@ class Contacts extends Component {
   render() {
     return (
       <Wrapper>
+        <MetaTags>
+          <meta name="description" content="Общество с ограниченной ответственностью Гаросс - контактная информация" />
+        </MetaTags>
         <H1Title text="Общество с ограниченной ответственностью 'Гаросс'" />
         <Text firstText="Офис: г.Пермь, ул. Дзержинского 15, офис 10" />
         <Text firstText="Производственная база: г.Пермь, ул. Дзержинского 47 Литера Б1" />

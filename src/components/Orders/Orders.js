@@ -4,6 +4,7 @@ import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
 import Order from './Order';
 import { titles } from '../variables';
+import MetaTags from "react-meta-tags";
 
 const OrderWrap = styled.div`
   width: 100%;
@@ -24,6 +25,9 @@ class Orders extends Component {
   render() {
     return (
       <Wrapper>
+        <MetaTags>
+          <meta name="description" content="Общество с ограниченной ответственностью Гаросс - заказчики" />
+        </MetaTags>
         <H1Title text="Заказчики" />
         <OrderWrap>
           <Order
