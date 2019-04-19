@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import MetaTags from 'react-meta-tags';
 import { titles } from '../variables';
 import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
@@ -18,6 +19,9 @@ class Sitemap extends Component {
   render() {
     return (
       <Wrapper>
+        <MetaTags>
+          <meta name="description" content="Общество с ограниченной ответственностью Гаросс - карта сайта" />
+        </MetaTags>
         <H1Title text="Карта сайта" />
         <UnsortedList>
           <ListItem>

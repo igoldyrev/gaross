@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import MetaTags from 'react-meta-tags';
 import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
 import Order from './Order';
@@ -24,6 +25,9 @@ class Orders extends Component {
   render() {
     return (
       <Wrapper>
+        <MetaTags>
+          <meta name="description" content="Общество с ограниченной ответственностью Гаросс - заказчики" />
+        </MetaTags>
         <H1Title text="Заказчики" />
         <OrderWrap>
           <Order

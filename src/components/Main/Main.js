@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import MetaTags from 'react-meta-tags';
 import Wrapper from '../common_components/wrapper/wrapper';
 import IndexTitle from '../index/title/IndexTitle';
 import Text from '../common_components/text/text';
@@ -19,6 +20,9 @@ class Main extends Component {
   render() {
     return (
       <Wrapper>
+        <MetaTags>
+          <meta name="description" content="Общество с ограниченной ответственностью Гаросс - комплексные решения в области строительства" />
+        </MetaTags>
         <IndexTitle text="ООО «ГАРОСС» успешно работает с 2010 года" />
         <Text
           firstText="Основное направление деятельности предприятия - комплексные решения в области строительства, проектирования, энергетики, обеспечения безопасности и связи государственных и коммерческих структур, предприятий энергетического, нефтегазового и оборонного комплекса, а также объектов железнодорожного и воздушного транспорта."

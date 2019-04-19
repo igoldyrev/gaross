@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import MetaTags from 'react-meta-tags';
 import { titles, variables } from '../variables';
 import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
@@ -31,6 +32,9 @@ class Letters extends Component {
   render() {
     return (
       <Wrapper>
+        <MetaTags>
+          <meta name="description" content="Общество с ограниченной ответственностью Гаросс - благодарственные письма" />
+        </MetaTags>
         <H1Title text="Благодарственные письма" />
         <LetterWrap className="clearfix">
           <H4Title text="ФКГУ Комбинат 'Алый Стяг'" />

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MetaTags from 'react-meta-tags';
 import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
 import License from './license/license';
@@ -16,6 +17,9 @@ class Licenses extends Component {
   render() {
     return (
       <Wrapper>
+        <MetaTags>
+          <meta name="description" content="Общество с ограниченной ответственностью Гаросс - лицензии на осуществление деятельности" />
+        </MetaTags>
         <H1Title text="Лицензии" />
         <License
           LicenseName="Лицензия МЧС"
