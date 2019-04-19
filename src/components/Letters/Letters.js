@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import MetaTags from 'react-meta-tags';
 import { titles, variables } from '../variables';
 import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
 import H4Title from '../common_components/title-h4/titleH4';
 import Letter from './Letter';
-import MetaTags from "react-meta-tags";
 
 const LetterWrap = styled.div`
   padding: 10px;

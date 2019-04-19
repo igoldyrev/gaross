@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import MetaTags from 'react-meta-tags';
 import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
 import License from './license/license';
 import { titles } from '../variables';
-import MetaTags from "react-meta-tags";
 
 class Licenses extends Component {
   componentDidMount() {

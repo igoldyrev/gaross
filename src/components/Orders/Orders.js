@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import MetaTags from 'react-meta-tags';
 import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
 import Order from './Order';
 import { titles } from '../variables';
-import MetaTags from "react-meta-tags";
 
 const OrderWrap = styled.div`
   width: 100%;

@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import {
   YMaps, Map, GeoObject,
 } from 'react-yandex-maps';
+import MetaTags from 'react-meta-tags';
 import Wrapper from '../common_components/wrapper/wrapper';
 import H1Title from '../common_components/title-h1/titleH1';
 import Text from '../common_components/text/text';
 import H2Title from '../common_components/title-h2/titleH2';
 import { titles } from '../variables';
-import MetaTags from "react-meta-tags";
 
 const ContactsInner = styled.div`
   margin-bottom: 15px;
