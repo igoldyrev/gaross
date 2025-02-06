@@ -68,7 +68,7 @@ module.exports = {
         to: './img/index',
       },
       {
-        from: './src/components/licenses/img',
+        from: './src/components/Licenses/img',
         to: './img/licenses',
       },
       {
